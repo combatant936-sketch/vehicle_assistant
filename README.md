@@ -139,3 +139,13 @@ You will find the pre-configured Dashboard that tracks API performance, token us
 - `docker-compose.yaml`: Docker orchestrator file.
 - `Dockerfile`: Defines the FastAPI application container.
 - `pyproject.toml`: Python dependencies and project settings (using `uv`).
+- `Untitled.ipynb`: Jupyter Notebook used for synthetic data generation, search index prototyping, and offline RAG evaluation.
+
+## Data Generation & Prototyping
+
+The root directory contains the [Untitled.ipynb](file:///d:/vehicle-assistant/Untitled.ipynb) notebook, which outlines the design, generation, and testing workflow:
+1. **Synthetic Data Generation**: Uses structured output parsing (`VehicleIssueDataset` schema) and Groq (`openai/gpt-oss-120b`) to generate a dataset of 50 diverse vehicle diagnostic issues. The results are saved to [data/data.csv](file:///d:/vehicle-assistant/data/data.csv).
+2. **Search Index Prototyping**: Prototypes indexing the dataset using `minsearch` and testing text query matching.
+3. **RAG Pipeline Experimentation**: Simulates user questions, constructs prompt templates, and runs test completions to refine the generator response.
+4. **Evaluation**: Samples the RAG pipeline's response quality on test questions using an LLM-as-a-judge system that rates relevance (`RELEVANT`, `PARTLY_RELEVANT`, or `NON_RELEVANT`). The evaluations are recorded and exported to a CSV file.
+
