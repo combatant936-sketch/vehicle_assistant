@@ -34,15 +34,15 @@ and provide your evaluation in parsable JSON without using code blocks:
 """.strip()
 def search(query):
     boost = {
-        "issue_name": 2.3202416062705007,
-        "obd_code": 2.618567144281709,
-        "system": 0.14513049578638815,
-        "component": 0.7607975061336351,
-        "severity": 2.987567886034243,
-        "symptoms": 1.6778639196286658,
-        "likely_causes": 0.022704702373440133,
-        "diagnostic_steps": 1.968304426805405,
-        "diy_or_mechanic": 2.1777607455653696
+        "issue_name": 2.163704785547113,
+        "obd_code": 2.5248071634111575,
+        "system": 1.3721637770970387,
+        "component": 0.531839311833369,
+        "severity": 1.5891353299892015,
+        "symptoms": 1.5393792553796817,
+        "likely_causes": 2.4590220789428865,
+        "diagnostic_steps": 2.8175552886530446,
+        "diy_or_mechanic": 2.024417962519546
     }
 
     results = index.search(

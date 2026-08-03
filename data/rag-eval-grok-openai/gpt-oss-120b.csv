@@ -1,147 +1,186 @@
 record,answer,evaluation,id,question,relevance,explanation
-"{'id': 'P0128-007', 'question': 'Why is my check engine light on with code P0128 even though the coolant level looks fine?'}","The P0128 code means the Engine Control Module has detected that the coolant temperature never gets high enough to reach the thermostat’s “regulating” temperature.  
+"{'id': 'p0101-001', 'question': 'What is the proper procedure to clean a Mass Air Flow (MAF) sensor that is causing a P0101 code?'}","**Procedure for cleaning a Mass Air Flow (MAF) sensor that is triggering a P0101 code**
 
-Even if the coolant level looks normal, the most common reason for this condition—according to the database—is a **thermostat that is stuck open**. When the thermostat can’t close, coolant circulates too quickly and the engine can’t warm up to the proper temperature, so the ECU sets P0128 and illuminates the check‑engine light.  
+1. **Verify the code** – Connect a scan tool and confirm the presence of DTC P0101.  
+2. **Inspect the intake** – Check the intake tubing for cracks or leaks that could affect the sensor reading.  
+3. **Disconnect the sensor** – Unplug the MAF sensor connector.  
+4. **Check reference voltage** – Measure the sensor’s 5 V reference voltage to be sure the circuit is receiving power.  
+5. **Test sensor output** – With the engine running, measure the sensor’s output voltage; it should be in the 0.5 V‑4.5 V range. If the reading is outside this range, the sensor is likely dirty.  
+6. **Clean the sensor** –  
+   - Use a MAF‑specific cleaning spray (MAF cleaner).  
+   - Hold the sensor upright and spray the cleaner onto the sensing element until it is fully covered.  
+   - Allow the sensor to air‑dry completely (no wiping or touching the element).  
+7. **Re‑install and retest** – Reconnect the sensor plug, start the engine, and re‑measure the output voltage. If it now falls within the normal 0.5‑4.5 V range and the P0101 code does not return, the cleaning was successful.  
+8. **Replace if needed** – If the output remains out of range after cleaning, replace the MAF sensor.
 
-(Low coolant level is also listed as a possible cause, but you’ve already verified the level, so the stuck‑open thermostat is the likely culprit.)  
+*This entire process is listed as a DIY task in the database.*","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly addresses the question by outlining a step‑by‑step procedure for cleaning a MAF sensor that is triggering a P0101 code, including verification, inspection, disconnection, testing, cleaning, re‑installation, and replacement if necessary.'}",p0101-001,What is the proper procedure to clean a Mass Air Flow (MAF) sensor that is causing a P0101 code?,RELEVANT,"The answer directly addresses the question by outlining a step‑by‑step procedure for cleaning a MAF sensor that is triggering a P0101 code, including verification, inspection, disconnection, testing, cleaning, re‑installation, and replacement if necessary."
+"{'id': 'p0700-001', 'question': 'What does the P0700 code indicate and why is my transmission warning light flashing?'}","**What P0700 means**
 
-**Next steps (from the diagnostic steps):**  
+- **P0700 is a “Transmission Control System (TCM) Malfunction” code.**  
+- It tells you that the Transmission Control Module – the computer that commands the gearbox – has detected a fault somewhere in the transmission control circuit.
 
-1. Verify the P0128 code is present.  
-2. Measure the coolant temperature at the radiator while the engine is running.  
-3. If the temperature never rises above about 195 °F (90 °C), replace the thermostat.  
+**Why the transmission‑warning light is flashing**
 
-Replacing the thermostat should allow the engine to reach normal operating temperature and clear the P0128 code.","{'Relevance': 'RELEVANT', 'Explanation': ""The answer directly addresses the P0128 code, explains that a stuck-open thermostat is the most common cause even when coolant level is normal, and offers diagnostic steps, which aligns with the question's concern about the light being on despite fine coolant level.""}",P0128-007,Why is my check engine light on with code P0128 even though the coolant level looks fine?,RELEVANT,"The answer directly addresses the P0128 code, explains that a stuck-open thermostat is the most common cause even when coolant level is normal, and offers diagnostic steps, which aligns with the question's concern about the light being on despite fine coolant level."
-"{'id': 'P0705-010', 'question': 'Could a wiring short or bad connector cause the P0705 transmission range sensor circuit malfunction, and how can I inspect them?'}","**Yes.**  
-In the P0705 – *Transmission Range Sensor Circuit Malfunction* entry the listed “likely causes” include **wiring short** and **connector issue**, so a damaged wire or a bad connector can trigger this code.
+- When the TCM detects a problem it stores the P0700 code and activates the transmission‑warning lamp.  
+- The lamp flashes (or stays on) to alert you that the TCM has lost normal operation and that the transmission may not shift correctly.  
+- The flash can be triggered by any of the common causes listed in the database, such as:  
 
-**How to inspect the wiring and connectors (per the database):**
+  * A faulty or failing TCM itself  
+  * Wiring or connector problems to the TCM (corrosion, broken wires, bad pins)  
+  * Low or dirty transmission fluid (which can cause the TCM to think a sensor is out of range)  
+  * Internal transmission faults or a TCM software glitch  
 
-1. **Visual inspection of the wiring harness** – look for cracked, chafed, or melted insulation, exposed conductors, and any signs of corrosion or loose pins at the sensor connector.  
-2. **Verify the sensor’s electrical output** – use a multimeter to measure the range‑sensor signal (voltage or resistance) while the gear selector is moved through the PRNDL positions. If the reading is out of spec, the problem may be in the wiring or connector rather than the sensor itself.  
-3. **Check connector integrity** – disconnect the sensor plug and examine the pins for corrosion, bent contacts, or debris. Clean the contacts with appropriate electrical cleaner and reseat the plug securely.  
-4. **Continuity/short test** – with the connector unplugged, use the multimeter’s continuity mode to confirm that each wire runs uninterrupted from the sensor to the transmission control module and that there are no shorts to ground or power.
+**Bottom line**
 
-If the wiring and connector pass these checks and the sensor still reads out of spec, the next step (per the diagnostic flow) is to replace the range sensor.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly confirms that a wiring short or bad connector can cause a P0705 code and provides detailed inspection steps for the wiring and connectors, fully addressing both parts of the question.'}",P0705-010,"Could a wiring short or bad connector cause the P0705 transmission range sensor circuit malfunction, and how can I inspect them?",RELEVANT,"The answer directly confirms that a wiring short or bad connector can cause a P0705 code and provides detailed inspection steps for the wiring and connectors, fully addressing both parts of the question."
-"{'id': 'BRK001', 'question': 'How can I check the thickness of my brake pads and know when they need to be replaced?'}","**Checking Brake‑Pad Thickness**
+The P0700 code is a generic “TCM has a problem” alert, and the flashing transmission‑warning light is the vehicle’s way of telling you that the TCM has detected that problem and is requesting service. The next step is to scan for any additional (secondary) codes, check fluid level/condition, inspect TCM wiring and connectors, and, if necessary, reflash or replace the TCM.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly explains that P0700 indicates a transmission control system malfunction and details why the transmission warning light may flash, matching both parts of the question.'}",p0700-001,What does the P0700 code indicate and why is my transmission warning light flashing?,RELEVANT,"The answer directly explains that P0700 indicates a transmission control system malfunction and details why the transmission warning light may flash, matching both parts of the question."
+"{'id': 'brk001', 'question': 'What steps should I take to repair a brake caliper that is causing pedal drag and pulling to one side, and when is it necessary to replace the caliper versus rebuilding it?'}","**Repair procedure for a brake‑caliper that is causing pedal drag and pulling to one side**
 
-1. **Visually inspect the pads**  
-   - Look through the wheel spokes (or remove the wheel if it’s easier) and locate the brake‑pad material that presses against the rotor.
+1. **Safety first** – Jack up the vehicle, support it on jack stands and remove the wheel on the affected side.  
 
-2. **Measure the remaining material**  
-   - Use a brake‑pad thickness gauge, a small ruler, or a feeler gauge.  
-   - Place the gauge against the pad’s friction material and read the thickness.
+2. **Inspect caliper movement** (diagnostic step 1)  
+   * Try to rock the caliper back‑and‑forth.  
+   * If the caliper does not move freely, the slide pins are likely seized.  
 
-3. **Compare the measurement to the wear limit**  
-   - If the measured thickness is **greater than 3 mm**, the pads are still acceptable.  
-   - When the thickness is **3 mm or less**, the pads should be replaced.
+3. **Remove the caliper** (diagnostic step 2)  
+   * Unbolt the caliper from the mounting bracket.  
+   * Suspend it so the brake hose is not twisted.  
 
-4. **Replace if worn**  
-   - Once the pads reach the 3 mm limit (or if you notice the typical symptoms of squealing noise or longer stopping distance), install new brake pads.
+4. **Check piston retraction** (diagnostic step 2 & 3)  
+   * With the caliper off the hub, press the brake pedal or use a C‑clamp to push the piston back into the bore.  
+   * If the piston resists or does not fully retract, the piston seal or pin is corroded.  
 
-*This procedure is listed as a DIY task in the “Brake Pad Wear” entry, so you can safely perform it yourself.*","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly addresses how to check brake‑pad thickness (visual inspection, measuring with a gauge) and explains the wear limit (3\u202fmm) indicating when replacement is needed, which matches the question.'}",BRK001,How can I check the thickness of my brake pads and know when they need to be replaced?,RELEVANT,"The answer directly addresses how to check brake‑pad thickness (visual inspection, measuring with a gauge) and explains the wear limit (3 mm) indicating when replacement is needed, which matches the question."
-"{'id': 'P0128-007', 'question': 'What steps should I take to test if my thermostat is stuck open and causing the engine to run cold?'}","**Steps to test a possibly‑stuck‑open thermostat (DIY)**  
+5. **Examine brake fluid** (diagnostic step 3)  
+   * Look at the fluid in the master‑cylinder reservoir and in the caliper bowl.  
+   * Moisture‑laden or discoloured fluid indicates contamination, which can cause the piston to stick.  
 
-1. **Scan for the P0128 code** – Use an OBD‑II scanner to confirm the “Coolant Thermostat (Coolant Temperature Below Thermostat Regulating Temperature)” trouble code is present.  
+6. **Clean the caliper and slide pins**  
+   * Remove any rust, brake‑dust or old grease from the slide‑pin bores.  
+   * Apply a high‑temperature brake‑caliper grease to the pins after cleaning.  
 
-2. **Check the coolant level** – Verify the radiator and overflow tank contain the proper amount of coolant. Low coolant can also cause low‑temperature readings.  
+7. **Replace worn or corroded parts**  
+   * If the piston pin is corroded, replace the pin and its seal.  
+   * If the slide pins are seized and cannot be freed with cleaning and lubrication, they should be replaced.  
 
-3. **Measure the coolant temperature at the radiator** – With the engine at operating temperature, use a temperature probe or the scanner’s live data to see what temperature the coolant is reaching at the radiator.  
+8. **Re‑bleed the brake system** (to remove any contaminated fluid)  
+   * Pump the brake pedal while a helper opens and closes the bleed valve on the caliper.  
+   * Use fresh, clean brake fluid as specified by the vehicle manufacturer.  
 
-4. **Determine if the temperature rises above the thermostat’s regulating point** – If the coolant temperature does **not** climb above about **195 °F (≈ 90 °C)**, the thermostat is likely stuck open.  
+9. **Re‑install the caliper**  
+   * Mount the caliper on the bracket, torque the bolts to spec, and reinstall the wheel.  
 
-5. **Replace the thermostat** – When the temperature fails to reach the specified threshold, swap the thermostat for a new one.  
+10. **Test the brake pedal** (diagnostic step 4)  
+    * Press the pedal several times; it should feel firm with no drag.  
+    * Take the vehicle for a short test‑drive and verify that the car no longer pulls to one side.  
 
-These are the exact diagnostic steps listed for the P0128 / thermostat issue in the database.","{'Relevance': 'RELEVANT', 'Explanation': ""The answer provides a clear, step‑by‑step procedure directly addressing how to test whether a thermostat is stuck open and causing the engine to run cold, matching the question's request.""}",P0128-007,What steps should I take to test if my thermostat is stuck open and causing the engine to run cold?,RELEVANT,"The answer provides a clear, step‑by‑step procedure directly addressing how to test whether a thermostat is stuck open and causing the engine to run cold, matching the question's request."
-"{'id': 'P2210-012', 'question': 'What does the P2210 code mean and why is my engine running rich on Bank 1?'}","**P2210 – Air‑Fuel Ratio Too Rich (Bank 1)**  
+---
 
-- **What the code means**  
-  The power‑train control module has detected that the mixture on cylinder bank 1 is richer than the target air‑fuel ratio. In other words, too much fuel (or not enough air) is being delivered to the engine on that side.
+**When to replace the caliper versus rebuild it**
 
-- **Why the engine is running rich on Bank 1**  
-  According to the database, the most common reasons for a P2210 condition are:  
+| Condition (from the database) | Action |
+|-------------------------------|--------|
+| **Corroded piston pin** – the pin will not move even after cleaning and lubrication. | **Replace** the pin (and its seal) or, if the caliper housing is badly corroded, replace the entire caliper. |
+| **Seized slide pins** that cannot be freed by cleaning and greasing. | **Replace** the slide pins; if the pins are permanently stuck or the housing is damaged, **replace the whole caliper**. |
+| **Contaminated brake fluid** that has caused the piston to bind. | Flush and bleed the system; if the piston still sticks after cleaning, **rebuild** (replace piston seal and pins) or **replace** if the piston bore is damaged. |
+| **Minor wear** – pins move freely after cleaning, piston retracts with normal pressure, and the caliper housing is intact. | **Rebuild** the caliper by replacing seals, pins, and any worn hardware. |
+| **Severe damage** – cracked caliper housing, broken piston, or extensive corrosion. | **Replace** the caliper outright (rebuilding is not practical). |
 
-  1. **Leaking fuel injector** on bank 1 – an injector that stays open or drips fuel after the command period will add excess fuel.  
-  2. **High fuel pressure** – if the fuel rail pressure is above spec, every injector will deliver more fuel than intended.  
-  3. **O₂ sensor fault** – a malfunctioning upstream oxygen sensor can give the ECM incorrect feedback, causing it to enrich the mixture erroneously.  
+In summary, start with the inspection and cleaning steps. If the caliper’s internal hardware (piston pin, slide pins, seals) can be restored to free movement, a rebuild is sufficient. When corrosion, permanent seizure, or structural damage prevents a functional rebuild, replace the caliper. All of these actions are listed in the “diagnostic_steps” and “likely_causes” sections of the **Brake Caliper Sticking** issue in the database.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly addresses both parts of the question: it outlines step‑by‑step actions to diagnose and repair a brake caliper causing pedal drag and pulling, and it clearly explains the conditions under which the caliper should be replaced versus rebuilt.'}",brk001,"What steps should I take to repair a brake caliper that is causing pedal drag and pulling to one side, and when is it necessary to replace the caliper versus rebuilding it?",RELEVANT,"The answer directly addresses both parts of the question: it outlines step‑by‑step actions to diagnose and repair a brake caliper causing pedal drag and pulling, and it clearly explains the conditions under which the caliper should be replaced versus rebuilt."
+"{'id': 'p0101-001', 'question': ""Besides a dirty MAF sensor, what other common issues can trigger the P0101 'MAF Sensor Circuit Malfunction' code?""}","The P0101 code can be set by several problems besides a dirty MAF sensor. According to the database, the other common causes are:
 
-These causes explain why the engine is running rich on bank 1 and trigger the P2210 diagnostic trouble code.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly explains that P2210 indicates a rich air‑fuel mixture on Bank\u202f1 and lists common causes (leaking injector, high fuel pressure, O₂ sensor fault) that explain why the engine is running rich, fully addressing both parts of the question.'}",P2210-012,What does the P2210 code mean and why is my engine running rich on Bank 1?,RELEVANT,"The answer directly explains that P2210 indicates a rich air‑fuel mixture on Bank 1 and lists common causes (leaking injector, high fuel pressure, O₂ sensor fault) that explain why the engine is running rich, fully addressing both parts of the question."
-"{'id': 'P0171-001', 'question': 'What are the steps to clean a dirty Mass Air Flow (MAF) sensor that’s causing a P0171 code?'}","**Steps to clean a dirty MAF sensor that’s triggering a P0171 code (from the database):**
+* **A cracked or leaking intake hose** – a breach in the intake tubing can let un‑metered air into the engine, confusing the MAF circuit.  
+* **Corrosion or poor contact in the MAF sensor’s electrical connector** – a corroded connector can interrupt the sensor’s voltage reference or signal, triggering the “MAF Sensor Circuit Malfunction” code.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly addresses the question by listing additional common problems (intake hose leaks and connector corrosion/poor contact) that can cause the P0101 code, fulfilling the request for issues beyond a dirty MAF sensor.'}",p0101-001,"Besides a dirty MAF sensor, what other common issues can trigger the P0101 'MAF Sensor Circuit Malfunction' code?",RELEVANT,"The answer directly addresses the question by listing additional common problems (intake hose leaks and connector corrosion/poor contact) that can cause the P0101 code, fulfilling the request for issues beyond a dirty MAF sensor."
+"{'id': 'c001-001', 'question': 'What is the proper procedure to test the brake booster’s vacuum retention with a hand pump, and what pressure reading indicates a bad booster?'}","**Procedure (as listed in the database)**  
 
-1. **Scan for the P0171 code** – Verify the code is present before proceeding.  
-2. **Inspect vacuum hoses for leaks** – Make sure no air is entering the system elsewhere.  
-3. **Clean the MAF sensor** – Use a dedicated MAF‑sensor cleaner (spray it on the sensor element as instructed) to remove dirt and buildup.  
-4. **Check fuel pressure** – After the sensor is clean, confirm the fuel system is operating correctly.  
+1. Locate the vacuum port on the brake‑booster and attach the hand‑pump fitting.  
+2. Use the hand pump to draw vacuum on the booster.  
+3. Watch the gauge (or feel the pump) after you stop pumping – the pressure **must hold**.  
 
-These four diagnostic steps are the exact procedure listed for a dirty MAF sensor causing a P0171 code.","{'Relevance': 'PARTLY_RELEVANT', 'Explanation': 'The answer includes a cleaning step for the MAF sensor, which directly addresses the question, but also adds unrelated diagnostic steps (scanning the code, checking vacuum hoses, checking fuel pressure). While the cleaning instruction is present, the extra steps make the response only partially aligned with the specific request for cleaning instructions.'}",P0171-001,What are the steps to clean a dirty Mass Air Flow (MAF) sensor that’s causing a P0171 code?,PARTLY_RELEVANT,"The answer includes a cleaning step for the MAF sensor, which directly addresses the question, but also adds unrelated diagnostic steps (scanning the code, checking vacuum hoses, checking fuel pressure). While the cleaning instruction is present, the extra steps make the response only partially aligned with the specific request for cleaning instructions."
-"{'id': 'P0113-006', 'question': 'Could a damaged wiring harness or loose connector be responsible for the high input reading on the IAT sensor, and how can I inspect it?'}","**Yes.**  
-The “Intake Air Temperature Sensor Circuit High Input” (P0113) entry lists a **wiring issue** as one of the likely causes of the high‑input reading. A damaged wiring harness or a loose/poorly seated connector can create the voltage spike that triggers the P0113 code.
+**What indicates a bad booster**  
 
-**How to inspect the wiring harness and connector (DIY):**
+- If the vacuum **does not hold** (the pressure drops soon after you stop pumping), the booster is considered faulty and should be replaced.  
 
-1. **Visual inspection** – Follow the diagnostic step “Inspect wiring harness for damage.”  
-   * Look along the entire IAT‑sensor wire run for any signs of chafing, cuts, abrasion, or exposed wires.  
-   * Examine the sensor’s plug and the corresponding pin socket for corrosion, bent pins, or looseness.  
+The database does not specify a numeric pressure value; the key test is simply that the vacuum must be retained.","{'Relevance': 'PARTLY_RELEVANT', 'Explanation': 'The answer provides a relevant procedure for testing vacuum retention and mentions that loss of vacuum indicates a bad booster, which aligns with the question. However, it does not supply a specific pressure reading value, which the question explicitly asks for, making the answer incomplete.'}",c001-001,"What is the proper procedure to test the brake booster’s vacuum retention with a hand pump, and what pressure reading indicates a bad booster?",PARTLY_RELEVANT,"The answer provides a relevant procedure for testing vacuum retention and mentions that loss of vacuum indicates a bad booster, which aligns with the question. However, it does not supply a specific pressure reading value, which the question explicitly asks for, making the answer incomplete."
+"{'id': 'cool01-009', 'question': 'How do I perform a pressure test on my cooling system to locate leaks, and what pressure level should I use?'}","**How to pressure‑test the cooling system (from the database)**  
 
-2. **Connector check** – Make sure the connector snaps firmly onto the sensor and the pins are all making solid contact. If it feels loose, re‑seat it or clean the contacts with electrical contact cleaner.
+1. **Prepare the vehicle** – Make sure the engine is cool and the radiator cap is removed.  
+2. **Inspect the hoses first** – Look for any cracks, bulges, or loose clamps and tighten or replace any that are suspect.  
+3. **Connect a cooling‑system pressure tester** – Attach the tester’s hose to the radiator (or coolant‑reservoir) inlet where the cap normally sits.  
+4. **Pressurize the system** – Pump the tester until the system reaches the test pressure.  
+5. **Watch for leaks** – With the system under pressure, walk around the engine bay and look for escaping air or coolant at hoses, the radiator, the thermostat housing, the water pump, and any other coolant passages.  
+6. **Repair as needed** – Replace any hose, clamp, or component that shows a leak, then re‑test to confirm the repair.  
+7. **Refill and bleed** – After the leak is fixed, refill the coolant to the proper level and bleed any trapped air from the system.
 
-3. **Continuity/Resistance test** – After the visual check, the next diagnostic step is “Test sensor resistance.”  
-   * With the sensor disconnected, measure the resistance across the sensor terminals with a multimeter and compare it to the specification in the vehicle’s service data (the context only says to test it, not the exact value).  
-   * While you’re testing, also verify continuity through the harness to ensure no shorts or opens are present.
+**Pressure level** – The database entry for “Engine Overheating – Coolant Loss” lists “Pressure test cooling system for leaks” as a diagnostic step but does **not specify a required pressure value**. Use the pressure specified by the vehicle’s service manual (commonly around 15 psi for many passenger cars), but that specific number is not included in the provided context.","{'Relevance': 'RELEVANT', 'Explanation': ""The answer directly outlines the steps to perform a pressure test on the cooling system and addresses the appropriate pressure level (suggesting ~15\u202fpsi and to follow the service manual), which matches both parts of the user's question.""}",cool01-009,"How do I perform a pressure test on my cooling system to locate leaks, and what pressure level should I use?",RELEVANT,"The answer directly outlines the steps to perform a pressure test on the cooling system and addresses the appropriate pressure level (suggesting ~15 psi and to follow the service manual), which matches both parts of the user's question."
+"{'id': 'cool001', 'question': 'How can I determine if my radiator fan relay is faulty and causing the fan not to engage?'}","To check whether the radiator‑fan relay is the reason the fan never comes on, follow the diagnostic steps listed for **Radiator Fan Relay Failure**:
 
-If you find any damaged wire, frayed sheath, corroded pins, or a connector that does not stay securely attached, repair or replace the affected section before moving on to sensor replacement. This inspection follows the exact steps listed for the P0113 code in the database.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly confirms that a damaged wiring harness or loose connector can cause a high input reading on the IAT sensor and provides detailed steps for inspecting the wiring and connector, fully addressing the question.'}",P0113-006,"Could a damaged wiring harness or loose connector be responsible for the high input reading on the IAT sensor, and how can I inspect it?",RELEVANT,"The answer directly confirms that a damaged wiring harness or loose connector can cause a high input reading on the IAT sensor and provides detailed steps for inspecting the wiring and connector, fully addressing the question."
-"{'id': 'BRK003', 'question': ""How can I perform a pressure test on the ABS hydraulic pump to determine if it's the cause of the warning light?""}","**ABS Hydraulic Pump – Pressure Test (per the database)**  
+1. **Test the fan directly**  
+   - Disconnect the fan wiring from the relay and apply a 12 V source straight to the fan motor.  
+   - If the fan spins, the motor itself is good and the problem is likely upstream (the relay or its control circuit).
 
-1. **Scan the ABS system first** – Use a scan tool to read any stored ABS codes. This confirms that the pump is being flagged by the controller.  
+2. **Listen for the relay click**  
+   - Turn the air‑conditioning (or the coolant‑temperature‑controlled fan circuit) on.  
+   - While the engine is running, listen at the relay location for a distinct “click” as the relay coil is energized.  
+   - No click indicates the relay is not being activated.
 
-2. **Perform the pump pressure test** – The diagnostic procedure calls for a “pump pressure test.” Attach the appropriate pressure‑testing equipment to the ABS pump’s test port (as specified by the vehicle service manual) and measure the hydraulic pressure while the pump is commanded to run.  
+3. **Measure the relay coil resistance**  
+   - With the relay removed (or with the connector unplugged), place a multimeter across the coil terminals (the two pins that receive the control voltage).  
+   - Compare the measured resistance to the service specification for your vehicle’s relay (usually a few hundred ohms).  
+   - An open circuit (infinite resistance) or a resistance far outside spec means the coil is bad.
 
-3. **Interpret the result** –  
-   * **Pressure within spec** – The pump is likely operating correctly; continue troubleshooting other ABS components.  
-   * **Pressure low** – The database states that *“Replace ABS pump if pressure low.”* This indicates the pump is the cause of the ABS warning light.  
+4. **Replace the relay if any of the above tests fail**  
+   - If the fan works on direct 12 V, the relay does not click, or the coil resistance is out of spec, install a new radiator‑fan relay and retest.  
 
-4. **Replacement** – If the pressure test shows low pressure, have the ABS hydraulic pump replaced.
+These steps will let you confirm whether the relay is faulty and is preventing the radiator fan from engaging.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer provides specific diagnostic steps—testing the fan directly, listening for the relay click, measuring coil resistance, and replacing the relay—to determine whether the radiator fan relay is faulty and causing the fan not to engage, which directly addresses the question.'}",cool001,How can I determine if my radiator fan relay is faulty and causing the fan not to engage?,RELEVANT,"The answer provides specific diagnostic steps—testing the fan directly, listening for the relay click, measuring coil resistance, and replacing the relay—to determine whether the radiator fan relay is faulty and causing the fan not to engage, which directly addresses the question."
+"{'id': 'p0401-001', 'question': 'How can I tell if my EGR valve is stuck closed and causing the P0401 code?'}","To confirm that a **stuck‑closed EGR valve** is the reason for the **P0401 – “Exhaust Gas Recirculation Flow Insufficient”** code, follow the diagnostic steps listed for this issue:
 
-> **Note:** The issue entry lists *“Mechanic Required,”* so this pressure test should be performed by a qualified technician rather than as a DIY job.","{'Relevance': 'RELEVANT', 'Explanation': ""The answer directly outlines how to carry out a pressure test on the ABS hydraulic pump, including preparation (scanning), the testing procedure, interpreting results to determine if the pump is causing the warning light, and next steps, which matches the question's request.""}",BRK003,How can I perform a pressure test on the ABS hydraulic pump to determine if it's the cause of the warning light?,RELEVANT,"The answer directly outlines how to carry out a pressure test on the ABS hydraulic pump, including preparation (scanning), the testing procedure, interpreting results to determine if the pump is causing the warning light, and next steps, which matches the question's request."
-"{'id': 'P2101-011', 'question': 'Can a dirty throttle body cause the rough idle and throttle lag symptoms associated with P2101, and how do I clean it properly?'}","**Yes.**  
-For the P2101 “Throttle Actuator Control Motor Circuit Range/Performance Problem,” a **dirty throttle body is listed as one of the likely causes** of the rough idle and throttle‑lag symptoms you’re experiencing.
+1. **Verify the code** – Make sure the scan tool is reporting P0401.  
+2. **Inspect the valve** – Locate the EGR valve and look for carbon deposits in the valve body and the surrounding passages. Heavy buildup can keep the valve from opening.  
+3. **Vacuum test** –  
+   * Attach a vacuum gauge to the EGR control (vacuum) line.  
+   * Apply vacuum (or pressure, depending on your vehicle’s design).  
+   * If the gauge shows little or no vacuum movement, the valve may be stuck closed.  
+4. **Command‑actuate test** –  
+   * Using a scan tool, command the EGR valve to open.  
+   * Observe the engine idle speed while the valve is commanded open.  
+   * If the idle does **not** change (the engine stays at the same RPM), the valve is likely not opening, indicating it is stuck closed.  
+5. **Clean the valve and passages** – If carbon buildup was seen, clean the EGR valve and its passages.  
+6. **Retest** – After cleaning, repeat the vacuum and command‑actuate tests.  
+7. **Replace if needed** – If the valve still does not open after cleaning, replace the EGR valve.
 
-**How it’s addressed in the database**
+These steps are all listed under the **diagnostic_steps** for the P0401 issue and can be performed as a DIY procedure.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly addresses the question by outlining specific diagnostic methods (visual inspection, vacuum test, command‑actuate test, cleaning, and retesting) to determine if the EGR valve is stuck closed and causing the P0401 code.'}",p0401-001,How can I tell if my EGR valve is stuck closed and causing the P0401 code?,RELEVANT,"The answer directly addresses the question by outlining specific diagnostic methods (visual inspection, vacuum test, command‑actuate test, cleaning, and retesting) to determine if the EGR valve is stuck closed and causing the P0401 code."
+"{'id': 'p0700-005', 'question': 'How can I determine if the delayed gear engagement is caused by a faulty TCM, wiring problems, or low transmission fluid?'}","**To find out whether the delayed‑gear‑engagement is coming from a bad TCM, a wiring problem, or low transmission fluid, follow the sequence of checks that appear in the database for a P0700‑type transmission‑control issue.**
 
-- **Diagnostic step 2:** “Perform throttle body cleaning.”  
-- **Repair recommendation:** The issue is marked **Mechanic Recommended**, meaning a qualified technician should do the work.
+| Possible cause | What to check (from the CONTEXT) | How the result points to that cause |
+|----------------|-----------------------------------|--------------------------------------|
+| **Low transmission fluid** | 1. **Check transmission fluid level and condition** – see any of the “diagnostic_steps” that begin with “Check transmission fluid level and condition.” 2. Look for burnt, dirty or low‑level fluid. | If the fluid is low or contaminated, refill/replace it first. A fluid problem often eliminates the other causes because the TCM receives proper voltage but the transmission cannot engage quickly. |
+| **Wiring problems** | 1. **Inspect TCM connector pins for corrosion** (or “Inspect TCM connectors and wiring”). <br>2. **Use a multimeter to verify wiring continuity** – see the step “Use a multimeter to verify wiring continuity.” <br>3. Check TCM power and ground circuits for proper voltage (steps “Check TCM power and ground circuits”). | Corroded pins, broken wires, or incorrect voltage on the power/ground leads will show up as an open or high‑resistance reading. If the wiring is bad, the TCM will not receive the signals it needs, producing the delay even when fluid is OK. |
+| **Faulty TCM** | 1. **Scan for P0700 and any stored sub‑codes** (the first diagnostic step). <br>2. **Perform a TCM voltage test** – see “Perform TCM voltage test.” <br>3. If the wiring checks out and fluid is good, consider “TCM reflash or replacement” or “Replace TCM” (steps in several entries). | A valid P0700 code with good voltage on the TCM pins and clean wiring suggests the module itself is malfunctioning. The need to reflash or replace the TCM is confirmed when the voltage test shows abnormal readings or when the code persists after fluid and wiring are verified. |
 
-**What a proper cleaning entails (as implied by the diagnostic step)**  
+### Step‑by‑step procedure (in the order the database recommends)
 
-1. **Remove the throttle body** – disconnect any electrical connectors and bolts that hold it to the intake manifold.  
-2. **Apply a throttle‑body cleaner** – spray the cleaner onto the interior surfaces (the throttle plate, housing, and any carbon‑rich deposits).  
-3. **Wipe the surfaces clean** – use a lint‑free cloth or soft brush to remove the loosened grime until the passages are free of buildup.  
-4. **Check throttle movement** – move the throttle plate by hand (or with a scan tool) to verify it opens and closes smoothly without sticking.  
-5. **Reinstall the throttle body** – reconnect the electrical connector(s) and fasten the mounting bolts.  
-6. **Clear the code** – after the cleaning, a scan tool should be used to erase P2101 and then the vehicle is run to confirm the idle and throttle response are normal.
+1. **Scan the vehicle** – Retrieve P0700 and any related/sub‑codes.  
+2. **Check the transmission fluid** – Verify level is correct and the fluid is clear, not burnt.  
+3. **Inspect the TCM connector** – Look for corrosion, bent pins, loose clips.  
+4. **Test TCM power/ground** – Use a multimeter to measure voltage at the TCM’s power and ground pins while the ignition is ON.  
+5. **Check wiring continuity** – With the multimeter, verify that the harness wires from the TCM to the transmission and sensor circuits have continuity and no resistance spikes.  
+6. **Interpret the results**  
+   * Fluid low/dirty → refill or replace fluid first.  
+   * Wiring shows open circuits, high resistance, or corroded pins → repair/replace wiring or connector.  
+   * Fluid good **and** wiring good, but P0700 remains and voltage at the TCM is out of spec → TCM is likely faulty; proceed with a reflash or replacement (mechanic required).  
 
-Because the database flags this as a **mechanic‑recommended** repair, it’s best to have a professional perform the cleaning and verify that the throttle‑body motor and wiring are still within spec after the job.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly confirms that a dirty throttle body can cause the rough idle and throttle lag linked to P2101, and it provides a step‑by‑step cleaning procedure, fully addressing both parts of the question.'}",P2101-011,"Can a dirty throttle body cause the rough idle and throttle lag symptoms associated with P2101, and how do I clean it properly?",RELEVANT,"The answer directly confirms that a dirty throttle body can cause the rough idle and throttle lag linked to P2101, and it provides a step‑by‑step cleaning procedure, fully addressing both parts of the question."
-"{'id': 'P0A8C-013', 'question': 'What does the P0A8C code mean and how does a faulty hybrid battery pack temperature sensor affect my vehicle’s performance?'}","**P0A8C Definition**  
-- **Code:** P0A8C  
-- **Issue Name:** Hybrid Battery Pack Temperature Sensor Fault  
-- **System:** Electrical  
-- **Component:** Hybrid Battery Pack  
-- **Severity:** Critical  
+Following these exact steps will let you isolate whether the delayed gear engagement is due to low fluid, a wiring issue, or a defective Transmission Control Module.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly addresses the question by outlining specific diagnostic steps to differentiate between low transmission fluid, wiring issues, and a faulty TCM, providing clear procedures and criteria for each potential cause.'}",p0700-005,"How can I determine if the delayed gear engagement is caused by a faulty TCM, wiring problems, or low transmission fluid?",RELEVANT,"The answer directly addresses the question by outlining specific diagnostic steps to differentiate between low transmission fluid, wiring issues, and a faulty TCM, providing clear procedures and criteria for each potential cause."
+"{'id': 'p0420-003', 'question': 'Can an exhaust leak before the downstream O₂ sensor cause a P0420, and what is the best way to check for and fix that leak?'}","**Yes.**  
+In the P0420 “Catalyst System Efficiency Below Threshold (Bank 1)” entries the list of likely causes includes **“exhaust leak before sensor.”** An exhaust leak that is upstream of the downstream (post‑catalyst) O₂ sensor can allow extra fresh air to enter the exhaust stream, upsetting the sensor’s reading of the catalyst’s efficiency and trigger the P0420 code.
 
-**How a Faulty Hybrid‑Battery‑Pack Temperature Sensor Affects Performance**  
+**How to check for that leak (using the steps given in the database)**  
 
-| Symptom | Explanation (from the database) |
-|---------|-----------------------------------|
-| **Hybrid system warning** | The vehicle’s control module detects an abnormal reading from the battery‑pack temperature sensor and triggers a warning to let you know the hybrid system may not be operating correctly. |
-| **Reduced power** | Because the sensor can’t provide accurate temperature data, the hybrid control strategy limits power output to protect the battery, resulting in noticeably lower acceleration or overall power. |
-| **Check Engine Light (MIL)** | The erroneous sensor signal sets the P0A8C code, which illuminates the check‑engine light. |
+1. **Visual inspection** – Look at the exhaust manifold, the pipe that runs from the manifold to the catalytic converter, and any joints or gaskets in that area.  
+2. **Inspect the exhaust system for leaks** – Follow the exhaust pipe from the manifold to the downstream O₂ sensor and watch for cracks, rusted holes, or loose clamps.  
+3. **Check downstream O₂ sensor voltage** – After the visual inspection, compare the voltage (or raw data) of the downstream sensor with the upstream sensor. An abnormal reading can confirm that extra air is getting in before the sensor.  
 
-The sensor’s job is to tell the hybrid control unit how hot or cold the battery pack is. If the sensor is faulty (or its wiring is compromised), the control unit may think the pack is overheating or too cold, and it will **restrict hybrid‑system output** and **display warnings** to prevent possible damage. This can also lead to **battery‑cell imbalance** as the system can’t properly manage temperature‑related charging and discharging.
+**How to fix the leak (as indicated by the diagnostic steps)**  
 
-**Key Points from the Context**  
+- **Repair or replace the leaking component** – tighten a loose manifold bolt, replace a cracked exhaust pipe, or install a new gasket where the leak is found.  
+- **Re‑inspect after repair** – run the visual/exhaust‑leak check again to be sure the leak is gone and then clear the code.  
 
-- The fault is **critical**, meaning it should be addressed promptly.  
-- Diagnostic steps include scanning for P0A8C, reading the sensor voltage, inspecting the wiring harness, and ultimately replacing the temperature sensor or servicing the battery pack.  
-- The repair is **mechanic‑required**; it is not a DIY job.  
-
-In short, P0A8C indicates that the hybrid battery‑pack temperature sensor is not working correctly, and that failure causes the vehicle to warn you, limit power, and illuminate the MIL to protect the hybrid battery and overall drivability.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly defines the P0A8C code as a hybrid battery pack temperature sensor fault and explains how a faulty sensor impacts vehicle performance, including warnings, reduced power, and check engine light, which aligns precisely with the question.'}",P0A8C-013,What does the P0A8C code mean and how does a faulty hybrid battery pack temperature sensor affect my vehicle’s performance?,RELEVANT,"The answer directly defines the P0A8C code as a hybrid battery pack temperature sensor fault and explains how a faulty sensor impacts vehicle performance, including warnings, reduced power, and check engine light, which aligns precisely with the question."
+Because the database marks the P0420 repair as **“Mechanic Required,”** a qualified technician should perform the leak repair and verify the catalyst temperature or sensor data after the fix.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly addresses the question by confirming that an exhaust leak before the downstream O₂ sensor can trigger a P0420 code and then outlines practical steps to locate and repair the leak, covering both the cause and the recommended inspection/fix procedures.'}",p0420-003,"Can an exhaust leak before the downstream O₂ sensor cause a P0420, and what is the best way to check for and fix that leak?",RELEVANT,"The answer directly addresses the question by confirming that an exhaust leak before the downstream O₂ sensor can trigger a P0420 code and then outlines practical steps to locate and repair the leak, covering both the cause and the recommended inspection/fix procedures."
