@@ -1,0 +1,141 @@
+import json
+from time import time
+from openai import OpenAI
+import project.ingest as ingest
+
+from dotenv import load_dotenv
+load_dotenv()
+
+import os
+
+openai_client = OpenAI(
+    api_key=os.getenv("GROQ_API_KEY"),
+    base_url="https://api.groq.com/openai/v1"
+)
+index = ingest.load_index()
+evaluation_prompt_template = """
+You are an expert evaluator for a RAG system.
+Your task is to analyze the relevance of the generated answer to the given question.
+Based on the relevance of the generated answer, you will classify it
+as 'NON_RELEVANT', 'PARTLY_RELEVANT', or 'RELEVANT'.
+
+Here is the data for evaluation:
+
+Question: {question}
+Generated Answer: {answer}
+
+Please analyze the content and context of the generated answer in relation to the question
+and provide your evaluation in parsable JSON without using code blocks:
+
+{{
+  'Relevance': 'NON_RELEVANT' | 'PARTLY_RELEVANT' | 'RELEVANT',
+  'Explanation': '[Provide a brief explanation for your evaluation]'
+}}
+""".strip()
+def search(query):
+    boost = {
+        "issue_name": 2.3202416062705007,
+        "obd_code": 2.618567144281709,
+        "system": 0.14513049578638815,
+        "component": 0.7607975061336351,
+        "severity": 2.987567886034243,
+        "symptoms": 1.6778639196286658,
+        "likely_causes": 0.022704702373440133,
+        "diagnostic_steps": 1.968304426805405,
+        "diy_or_mechanic": 2.1777607455653696
+    }
+
+    results = index.search(
+        query=query, filter_dict={}, boost_dict=boost, num_results=10
+    )
+    return results
+
+
+prompt_template = """
+You're a vehicle diagnostic assistant. Answer the QUESTION based on the CONTEXT from our vehicle issues database.
+Use only the facts from the CONTEXT when answering the QUESTION.
+
+QUESTION: {question}
+
+CONTEXT:
+{context}
+""".strip()
+
+entry_template = """
+issue_name: {issue_name}
+obd_code: {obd_code}
+system: {system}
+component: {component}
+severity: {severity}
+symptoms: {symptoms}
+likely_causes: {likely_causes}
+diagnostic_steps: {diagnostic_steps}
+diy_or_mechanic: {diy_or_mechanic}
+""".strip()
+def evaluate_relevance(question, answer):
+    prompt = evaluation_prompt_template.format(question=question, answer=answer)
+    evaluation, tokens = llm(prompt, model="openai/gpt-oss-120b")
+
+    try:
+        json_eval = json.loads(evaluation)
+        return json_eval, tokens
+    except json.JSONDecodeError:
+        result = {"Relevance": "UNKNOWN", "Explanation": "Failed to parse evaluation"}
+        return result, tokens
+
+def calculate_openai_cost(model, tokens):
+    openai_cost = 0
+    if "openai/gpt-oss-120b" in model:
+        openai_cost = (
+            tokens["prompt_tokens"] * 0.15
+            + tokens["completion_tokens"] * 0.60
+        ) / 1_000_000
+    return openai_cost
+
+def build_prompt(query, search_results):
+    context = ""
+    for doc in search_results:
+        context = context + entry_template.format(**doc) + "\n\n"
+    prompt = prompt_template.format(question=query, context=context).strip()
+    return prompt
+
+
+def llm(prompt, model="openai/gpt-oss-120b"):
+    response = openai_client.responses.create(
+        model=model,
+        input=[{"role": "user", "content": prompt}]
+    )
+    answer = response.output_text
+    token_stats = {
+        "prompt_tokens": response.usage.input_tokens,
+        "completion_tokens": response.usage.output_tokens,
+        "total_tokens": response.usage.total_tokens,
+    }
+    return answer, token_stats
+
+def rag(query, model="openai/gpt-oss-120b"):
+    t0 = time()
+    search_results = search(query)
+    prompt = build_prompt(query, search_results)
+    answer, token_stats = llm(prompt, model=model)
+    relevance, rel_token_stats = evaluate_relevance(query, answer)
+    took = time() - t0
+
+    openai_cost_rag = calculate_openai_cost(model, token_stats)
+    openai_cost_eval = calculate_openai_cost(model, rel_token_stats)
+    openai_cost = openai_cost_rag + openai_cost_eval
+
+    return {
+        "answer": answer,
+        "model_used": model,
+        "response_time": took,
+        "relevance": relevance.get("Relevance", "UNKNOWN"),
+        "relevance_explanation": relevance.get("Explanation", "Failed to parse"),
+        "prompt_tokens": token_stats["prompt_tokens"],
+        "completion_tokens": token_stats["completion_tokens"],
+        "total_tokens": token_stats["total_tokens"],
+        "eval_prompt_tokens": rel_token_stats["prompt_tokens"],
+        "eval_completion_tokens": rel_token_stats["completion_tokens"],
+        "eval_total_tokens": rel_token_stats["total_tokens"],
+        "openai_cost": openai_cost,
+    }

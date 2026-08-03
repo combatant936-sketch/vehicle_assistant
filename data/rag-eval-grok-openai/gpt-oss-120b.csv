@@ -1,0 +1,147 @@
+record,answer,evaluation,id,question,relevance,explanation
+"{'id': 'P0128-007', 'question': 'Why is my check engine light on with code P0128 even though the coolant level looks fine?'}","The P0128 code means the Engine Control Module has detected that the coolant temperature never gets high enough to reach the thermostat’s “regulating” temperature.  
+
+Even if the coolant level looks normal, the most common reason for this condition—according to the database—is a **thermostat that is stuck open**. When the thermostat can’t close, coolant circulates too quickly and the engine can’t warm up to the proper temperature, so the ECU sets P0128 and illuminates the check‑engine light.  
+
+(Low coolant level is also listed as a possible cause, but you’ve already verified the level, so the stuck‑open thermostat is the likely culprit.)  
+
+**Next steps (from the diagnostic steps):**  
+
+1. Verify the P0128 code is present.  
+2. Measure the coolant temperature at the radiator while the engine is running.  
+3. If the temperature never rises above about 195 °F (90 °C), replace the thermostat.  
+
+Replacing the thermostat should allow the engine to reach normal operating temperature and clear the P0128 code.","{'Relevance': 'RELEVANT', 'Explanation': ""The answer directly addresses the P0128 code, explains that a stuck-open thermostat is the most common cause even when coolant level is normal, and offers diagnostic steps, which aligns with the question's concern about the light being on despite fine coolant level.""}",P0128-007,Why is my check engine light on with code P0128 even though the coolant level looks fine?,RELEVANT,"The answer directly addresses the P0128 code, explains that a stuck-open thermostat is the most common cause even when coolant level is normal, and offers diagnostic steps, which aligns with the question's concern about the light being on despite fine coolant level."
+"{'id': 'P0705-010', 'question': 'Could a wiring short or bad connector cause the P0705 transmission range sensor circuit malfunction, and how can I inspect them?'}","**Yes.**  
+In the P0705 – *Transmission Range Sensor Circuit Malfunction* entry the listed “likely causes” include **wiring short** and **connector issue**, so a damaged wire or a bad connector can trigger this code.
+
+**How to inspect the wiring and connectors (per the database):**
+
+1. **Visual inspection of the wiring harness** – look for cracked, chafed, or melted insulation, exposed conductors, and any signs of corrosion or loose pins at the sensor connector.  
+2. **Verify the sensor’s electrical output** – use a multimeter to measure the range‑sensor signal (voltage or resistance) while the gear selector is moved through the PRNDL positions. If the reading is out of spec, the problem may be in the wiring or connector rather than the sensor itself.  
+3. **Check connector integrity** – disconnect the sensor plug and examine the pins for corrosion, bent contacts, or debris. Clean the contacts with appropriate electrical cleaner and reseat the plug securely.  
+4. **Continuity/short test** – with the connector unplugged, use the multimeter’s continuity mode to confirm that each wire runs uninterrupted from the sensor to the transmission control module and that there are no shorts to ground or power.
+
+If the wiring and connector pass these checks and the sensor still reads out of spec, the next step (per the diagnostic flow) is to replace the range sensor.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly confirms that a wiring short or bad connector can cause a P0705 code and provides detailed inspection steps for the wiring and connectors, fully addressing both parts of the question.'}",P0705-010,"Could a wiring short or bad connector cause the P0705 transmission range sensor circuit malfunction, and how can I inspect them?",RELEVANT,"The answer directly confirms that a wiring short or bad connector can cause a P0705 code and provides detailed inspection steps for the wiring and connectors, fully addressing both parts of the question."
+"{'id': 'BRK001', 'question': 'How can I check the thickness of my brake pads and know when they need to be replaced?'}","**Checking Brake‑Pad Thickness**
+
+1. **Visually inspect the pads**  
+   - Look through the wheel spokes (or remove the wheel if it’s easier) and locate the brake‑pad material that presses against the rotor.
+
+2. **Measure the remaining material**  
+   - Use a brake‑pad thickness gauge, a small ruler, or a feeler gauge.  
+   - Place the gauge against the pad’s friction material and read the thickness.
+
+3. **Compare the measurement to the wear limit**  
+   - If the measured thickness is **greater than 3 mm**, the pads are still acceptable.  
+   - When the thickness is **3 mm or less**, the pads should be replaced.
+
+4. **Replace if worn**  
+   - Once the pads reach the 3 mm limit (or if you notice the typical symptoms of squealing noise or longer stopping distance), install new brake pads.
+
+*This procedure is listed as a DIY task in the “Brake Pad Wear” entry, so you can safely perform it yourself.*","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly addresses how to check brake‑pad thickness (visual inspection, measuring with a gauge) and explains the wear limit (3\u202fmm) indicating when replacement is needed, which matches the question.'}",BRK001,How can I check the thickness of my brake pads and know when they need to be replaced?,RELEVANT,"The answer directly addresses how to check brake‑pad thickness (visual inspection, measuring with a gauge) and explains the wear limit (3 mm) indicating when replacement is needed, which matches the question."
+"{'id': 'P0128-007', 'question': 'What steps should I take to test if my thermostat is stuck open and causing the engine to run cold?'}","**Steps to test a possibly‑stuck‑open thermostat (DIY)**  
+
+1. **Scan for the P0128 code** – Use an OBD‑II scanner to confirm the “Coolant Thermostat (Coolant Temperature Below Thermostat Regulating Temperature)” trouble code is present.  
+
+2. **Check the coolant level** – Verify the radiator and overflow tank contain the proper amount of coolant. Low coolant can also cause low‑temperature readings.  
+
+3. **Measure the coolant temperature at the radiator** – With the engine at operating temperature, use a temperature probe or the scanner’s live data to see what temperature the coolant is reaching at the radiator.  
+
+4. **Determine if the temperature rises above the thermostat’s regulating point** – If the coolant temperature does **not** climb above about **195 °F (≈ 90 °C)**, the thermostat is likely stuck open.  
+
+5. **Replace the thermostat** – When the temperature fails to reach the specified threshold, swap the thermostat for a new one.  
+
+These are the exact diagnostic steps listed for the P0128 / thermostat issue in the database.","{'Relevance': 'RELEVANT', 'Explanation': ""The answer provides a clear, step‑by‑step procedure directly addressing how to test whether a thermostat is stuck open and causing the engine to run cold, matching the question's request.""}",P0128-007,What steps should I take to test if my thermostat is stuck open and causing the engine to run cold?,RELEVANT,"The answer provides a clear, step‑by‑step procedure directly addressing how to test whether a thermostat is stuck open and causing the engine to run cold, matching the question's request."
+"{'id': 'P2210-012', 'question': 'What does the P2210 code mean and why is my engine running rich on Bank 1?'}","**P2210 – Air‑Fuel Ratio Too Rich (Bank 1)**  
+
+- **What the code means**  
+  The power‑train control module has detected that the mixture on cylinder bank 1 is richer than the target air‑fuel ratio. In other words, too much fuel (or not enough air) is being delivered to the engine on that side.
+
+- **Why the engine is running rich on Bank 1**  
+  According to the database, the most common reasons for a P2210 condition are:  
+
+  1. **Leaking fuel injector** on bank 1 – an injector that stays open or drips fuel after the command period will add excess fuel.  
+  2. **High fuel pressure** – if the fuel rail pressure is above spec, every injector will deliver more fuel than intended.  
+  3. **O₂ sensor fault** – a malfunctioning upstream oxygen sensor can give the ECM incorrect feedback, causing it to enrich the mixture erroneously.  
+
+These causes explain why the engine is running rich on bank 1 and trigger the P2210 diagnostic trouble code.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly explains that P2210 indicates a rich air‑fuel mixture on Bank\u202f1 and lists common causes (leaking injector, high fuel pressure, O₂ sensor fault) that explain why the engine is running rich, fully addressing both parts of the question.'}",P2210-012,What does the P2210 code mean and why is my engine running rich on Bank 1?,RELEVANT,"The answer directly explains that P2210 indicates a rich air‑fuel mixture on Bank 1 and lists common causes (leaking injector, high fuel pressure, O₂ sensor fault) that explain why the engine is running rich, fully addressing both parts of the question."
+"{'id': 'P0171-001', 'question': 'What are the steps to clean a dirty Mass Air Flow (MAF) sensor that’s causing a P0171 code?'}","**Steps to clean a dirty MAF sensor that’s triggering a P0171 code (from the database):**
+
+1. **Scan for the P0171 code** – Verify the code is present before proceeding.  
+2. **Inspect vacuum hoses for leaks** – Make sure no air is entering the system elsewhere.  
+3. **Clean the MAF sensor** – Use a dedicated MAF‑sensor cleaner (spray it on the sensor element as instructed) to remove dirt and buildup.  
+4. **Check fuel pressure** – After the sensor is clean, confirm the fuel system is operating correctly.  
+
+These four diagnostic steps are the exact procedure listed for a dirty MAF sensor causing a P0171 code.","{'Relevance': 'PARTLY_RELEVANT', 'Explanation': 'The answer includes a cleaning step for the MAF sensor, which directly addresses the question, but also adds unrelated diagnostic steps (scanning the code, checking vacuum hoses, checking fuel pressure). While the cleaning instruction is present, the extra steps make the response only partially aligned with the specific request for cleaning instructions.'}",P0171-001,What are the steps to clean a dirty Mass Air Flow (MAF) sensor that’s causing a P0171 code?,PARTLY_RELEVANT,"The answer includes a cleaning step for the MAF sensor, which directly addresses the question, but also adds unrelated diagnostic steps (scanning the code, checking vacuum hoses, checking fuel pressure). While the cleaning instruction is present, the extra steps make the response only partially aligned with the specific request for cleaning instructions."
+"{'id': 'P0113-006', 'question': 'Could a damaged wiring harness or loose connector be responsible for the high input reading on the IAT sensor, and how can I inspect it?'}","**Yes.**  
+The “Intake Air Temperature Sensor Circuit High Input” (P0113) entry lists a **wiring issue** as one of the likely causes of the high‑input reading. A damaged wiring harness or a loose/poorly seated connector can create the voltage spike that triggers the P0113 code.
+
+**How to inspect the wiring harness and connector (DIY):**
+
+1. **Visual inspection** – Follow the diagnostic step “Inspect wiring harness for damage.”  
+   * Look along the entire IAT‑sensor wire run for any signs of chafing, cuts, abrasion, or exposed wires.  
+   * Examine the sensor’s plug and the corresponding pin socket for corrosion, bent pins, or looseness.  
+
+2. **Connector check** – Make sure the connector snaps firmly onto the sensor and the pins are all making solid contact. If it feels loose, re‑seat it or clean the contacts with electrical contact cleaner.
+
+3. **Continuity/Resistance test** – After the visual check, the next diagnostic step is “Test sensor resistance.”  
+   * With the sensor disconnected, measure the resistance across the sensor terminals with a multimeter and compare it to the specification in the vehicle’s service data (the context only says to test it, not the exact value).  
+   * While you’re testing, also verify continuity through the harness to ensure no shorts or opens are present.
+
+If you find any damaged wire, frayed sheath, corroded pins, or a connector that does not stay securely attached, repair or replace the affected section before moving on to sensor replacement. This inspection follows the exact steps listed for the P0113 code in the database.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly confirms that a damaged wiring harness or loose connector can cause a high input reading on the IAT sensor and provides detailed steps for inspecting the wiring and connector, fully addressing the question.'}",P0113-006,"Could a damaged wiring harness or loose connector be responsible for the high input reading on the IAT sensor, and how can I inspect it?",RELEVANT,"The answer directly confirms that a damaged wiring harness or loose connector can cause a high input reading on the IAT sensor and provides detailed steps for inspecting the wiring and connector, fully addressing the question."
+"{'id': 'BRK003', 'question': ""How can I perform a pressure test on the ABS hydraulic pump to determine if it's the cause of the warning light?""}","**ABS Hydraulic Pump – Pressure Test (per the database)**  
+
+1. **Scan the ABS system first** – Use a scan tool to read any stored ABS codes. This confirms that the pump is being flagged by the controller.  
+
+2. **Perform the pump pressure test** – The diagnostic procedure calls for a “pump pressure test.” Attach the appropriate pressure‑testing equipment to the ABS pump’s test port (as specified by the vehicle service manual) and measure the hydraulic pressure while the pump is commanded to run.  
+
+3. **Interpret the result** –  
+   * **Pressure within spec** – The pump is likely operating correctly; continue troubleshooting other ABS components.  
+   * **Pressure low** – The database states that *“Replace ABS pump if pressure low.”* This indicates the pump is the cause of the ABS warning light.  
+
+4. **Replacement** – If the pressure test shows low pressure, have the ABS hydraulic pump replaced.
+
+> **Note:** The issue entry lists *“Mechanic Required,”* so this pressure test should be performed by a qualified technician rather than as a DIY job.","{'Relevance': 'RELEVANT', 'Explanation': ""The answer directly outlines how to carry out a pressure test on the ABS hydraulic pump, including preparation (scanning), the testing procedure, interpreting results to determine if the pump is causing the warning light, and next steps, which matches the question's request.""}",BRK003,How can I perform a pressure test on the ABS hydraulic pump to determine if it's the cause of the warning light?,RELEVANT,"The answer directly outlines how to carry out a pressure test on the ABS hydraulic pump, including preparation (scanning), the testing procedure, interpreting results to determine if the pump is causing the warning light, and next steps, which matches the question's request."
+"{'id': 'P2101-011', 'question': 'Can a dirty throttle body cause the rough idle and throttle lag symptoms associated with P2101, and how do I clean it properly?'}","**Yes.**  
+For the P2101 “Throttle Actuator Control Motor Circuit Range/Performance Problem,” a **dirty throttle body is listed as one of the likely causes** of the rough idle and throttle‑lag symptoms you’re experiencing.
+
+**How it’s addressed in the database**
+
+- **Diagnostic step 2:** “Perform throttle body cleaning.”  
+- **Repair recommendation:** The issue is marked **Mechanic Recommended**, meaning a qualified technician should do the work.
+
+**What a proper cleaning entails (as implied by the diagnostic step)**  
+
+1. **Remove the throttle body** – disconnect any electrical connectors and bolts that hold it to the intake manifold.  
+2. **Apply a throttle‑body cleaner** – spray the cleaner onto the interior surfaces (the throttle plate, housing, and any carbon‑rich deposits).  
+3. **Wipe the surfaces clean** – use a lint‑free cloth or soft brush to remove the loosened grime until the passages are free of buildup.  
+4. **Check throttle movement** – move the throttle plate by hand (or with a scan tool) to verify it opens and closes smoothly without sticking.  
+5. **Reinstall the throttle body** – reconnect the electrical connector(s) and fasten the mounting bolts.  
+6. **Clear the code** – after the cleaning, a scan tool should be used to erase P2101 and then the vehicle is run to confirm the idle and throttle response are normal.
+
+Because the database flags this as a **mechanic‑recommended** repair, it’s best to have a professional perform the cleaning and verify that the throttle‑body motor and wiring are still within spec after the job.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly confirms that a dirty throttle body can cause the rough idle and throttle lag linked to P2101, and it provides a step‑by‑step cleaning procedure, fully addressing both parts of the question.'}",P2101-011,"Can a dirty throttle body cause the rough idle and throttle lag symptoms associated with P2101, and how do I clean it properly?",RELEVANT,"The answer directly confirms that a dirty throttle body can cause the rough idle and throttle lag linked to P2101, and it provides a step‑by‑step cleaning procedure, fully addressing both parts of the question."
+"{'id': 'P0A8C-013', 'question': 'What does the P0A8C code mean and how does a faulty hybrid battery pack temperature sensor affect my vehicle’s performance?'}","**P0A8C Definition**  
+- **Code:** P0A8C  
+- **Issue Name:** Hybrid Battery Pack Temperature Sensor Fault  
+- **System:** Electrical  
+- **Component:** Hybrid Battery Pack  
+- **Severity:** Critical  
+
+**How a Faulty Hybrid‑Battery‑Pack Temperature Sensor Affects Performance**  
+
+| Symptom | Explanation (from the database) |
+|---------|-----------------------------------|
+| **Hybrid system warning** | The vehicle’s control module detects an abnormal reading from the battery‑pack temperature sensor and triggers a warning to let you know the hybrid system may not be operating correctly. |
+| **Reduced power** | Because the sensor can’t provide accurate temperature data, the hybrid control strategy limits power output to protect the battery, resulting in noticeably lower acceleration or overall power. |
+| **Check Engine Light (MIL)** | The erroneous sensor signal sets the P0A8C code, which illuminates the check‑engine light. |
+
+The sensor’s job is to tell the hybrid control unit how hot or cold the battery pack is. If the sensor is faulty (or its wiring is compromised), the control unit may think the pack is overheating or too cold, and it will **restrict hybrid‑system output** and **display warnings** to prevent possible damage. This can also lead to **battery‑cell imbalance** as the system can’t properly manage temperature‑related charging and discharging.
+
+**Key Points from the Context**  
+
+- The fault is **critical**, meaning it should be addressed promptly.  
+- Diagnostic steps include scanning for P0A8C, reading the sensor voltage, inspecting the wiring harness, and ultimately replacing the temperature sensor or servicing the battery pack.  
+- The repair is **mechanic‑required**; it is not a DIY job.  
+
+In short, P0A8C indicates that the hybrid battery‑pack temperature sensor is not working correctly, and that failure causes the vehicle to warn you, limit power, and illuminate the MIL to protect the hybrid battery and overall drivability.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly defines the P0A8C code as a hybrid battery pack temperature sensor fault and explains how a faulty sensor impacts vehicle performance, including warnings, reduced power, and check engine light, which aligns precisely with the question.'}",P0A8C-013,What does the P0A8C code mean and how does a faulty hybrid battery pack temperature sensor affect my vehicle’s performance?,RELEVANT,"The answer directly defines the P0A8C code as a hybrid battery pack temperature sensor fault and explains how a faulty sensor impacts vehicle performance, including warnings, reduced power, and check engine light, which aligns precisely with the question."
