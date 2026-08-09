@@ -1,0 +1,147 @@
+record,answer,evaluation,issue_id,question,relevance,explanation
+"{'issue_id': 'p0171-002', 'question': 'How can I test my vacuum hoses for leaks to see if they are causing the P0171 (System Too Lean) code?'}","To check whether a vacuum leak is causing the P0171 (System Too Lean) code, follow the vacuum‑hose portion of the diagnostic steps listed for that code:
+
+1. **Locate all vacuum hoses** on the engine.  
+2. **Inspect each hose visually** for any signs of damage—look for cracks, splits, dry‑rot, or loose connections.  
+3. **Pay special attention** to the hoses that route to the intake manifold, brake booster, PCV valve, and any other components that draw vacuum.
+
+If you find a cracked or damaged hose, replace it and then clear the P0171 code to see if the lean condition disappears. If all hoses appear intact, continue with the next steps in the diagnostic flow (fuel pressure, MAF sensor, fuel trim analysis).","{'Relevance': 'PARTLY_RELEVANT', 'Explanation': 'The answer addresses inspecting vacuum hoses and mentions checking them for damage, which relates to the question about testing for leaks. However, it does not describe specific leak‑testing methods (e.g., smoke test, spray test, pressure test) that would directly answer how to test for leaks, so it is only partially relevant.'}",p0171-002,How can I test my vacuum hoses for leaks to see if they are causing the P0171 (System Too Lean) code?,PARTLY_RELEVANT,"The answer addresses inspecting vacuum hoses and mentions checking them for damage, which relates to the question about testing for leaks. However, it does not describe specific leak‑testing methods (e.g., smoke test, spray test, pressure test) that would directly answer how to test for leaks, so it is only partially relevant."
+"{'issue_id': 'p0420-004', 'question': 'What are the most common reasons for a P0420 code and how can I determine if the catalytic converter itself is faulty?'}","**Most common reasons for a P0420 code (Catalyst System Efficiency Below Threshold – Bank 1)**  
+
+1. **Clogged or failing catalytic converter** – the converter can no longer process exhaust gases efficiently.  
+2. **Faulty oxygen (O₂) sensor** – a bad sensor (up‑stream or down‑stream) gives incorrect voltage readings, making the PCM think the catalyst is ineffective.  
+3. **Exhaust leak before the catalyst** – extra air entering the exhaust stream throws off the O₂ sensor readings and the catalyst’s measured efficiency.
+
+**How to determine if the catalytic converter itself is faulty**
+
+1. **O₂‑sensor voltage test** –  
+   *Measure the voltage of the upstream (pre‑cat) and downstream (post‑cat) O₂ sensors while the engine is at operating temperature.*  
+   - A healthy converter will show the downstream sensor “stuck” (little change) while the upstream sensor fluctuates with the engine cycles.  
+   - If both sensors show similar, rapidly changing voltages, the converter may not be doing its job.
+
+2. **Temperature test across the converter** –  
+   *Place temperature probes before and after the catalytic converter.*  
+   - A properly functioning converter will be noticeably hotter on the exhaust side (down‑stream) than on the intake side (up‑stream).  
+   - Little or no temperature rise indicates the catalyst is not generating heat, suggesting it is clogged or failed.
+
+3. **Inspect for exhaust leaks** –  
+   *Check the exhaust manifold, pipes, and connections for any leaks upstream of the catalyst.*  
+   - Eliminating leaks rules out a false “inefficiency” reading caused by extra air; if the code persists after the leak is fixed, the converter is more likely at fault.
+
+4. **Back‑pressure test** –  
+   *Connect a back‑pressure gauge to the exhaust downstream of the converter.*  
+   - Excessive pressure indicates a restriction inside the catalyst (clogging). Normal pressure suggests the converter is not the primary issue.
+
+5. **Verify fuel trim values** –  
+   *Look at short‑ and long‑term fuel trim data.*  
+   - Extreme fuel trims can point to sensor or mixture problems rather than a bad catalyst. Normal trims combined with the above test results strengthen the case for a faulty converter.
+
+By following these steps—O₂ sensor voltage comparison, temperature differential, leak inspection, and back‑pressure measurement—you can isolate whether the catalytic converter itself is the culprit behind the P0420 code. If the converter shows little temperature rise, high back‑pressure, and the O₂ sensor readings indicate poor downstream activity after ruling out sensor and exhaust‑leak issues, the catalyst is likely defective and should be replaced.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly lists the most common causes of a P0420 code and provides detailed diagnostic procedures (O₂ sensor voltage comparison, temperature differential, exhaust leak inspection, back‑pressure test, fuel trim review) to determine whether the catalytic converter itself is at fault, fully addressing the question.'}",p0420-004,What are the most common reasons for a P0420 code and how can I determine if the catalytic converter itself is faulty?,RELEVANT,"The answer directly lists the most common causes of a P0420 code and provides detailed diagnostic procedures (O₂ sensor voltage comparison, temperature differential, exhaust leak inspection, back‑pressure test, fuel trim review) to determine whether the catalytic converter itself is at fault, fully addressing the question."
+"{'issue_id': 'elec001', 'question': 'What is the proper method and tools for cleaning and re‑torquing corroded battery terminals?'}","**Method and Tools for Cleaning & Re‑torquing Corroded Battery Terminals**
+
+1. **Inspect the terminals** – Look for the typical white or blue crust that indicates corrosion (the “Battery Terminal Corrosion” symptom).  
+
+2. **Remove the corrosion**  
+   * **Tool:** a dedicated **battery terminal brush** (the “battery brush” listed in the diagnostic steps).  
+   * **Procedure:** Scrub the terminal posts and the inside of the clamp until all crust is gone. Make sure the brush is dry and the battery is not being shorted (keep the brush away from other metal parts).  
+
+3. **Re‑torque the clamps**  
+   * **Tool:** a **torque wrench** set to the manufacturer’s clamp‑torque specification (the “re‑torque clamps” step implies using a torque‑controlled method).  
+   * **Procedure:** After the terminals are clean and the clamps are re‑mounted, tighten each clamp to the specified torque value. This ensures a solid, low‑resistance connection and prevents the clamp from loosening again.  
+
+4. **(Optional) Verify the repair** – Measure the battery voltage at rest (as per the diagnostic steps) to confirm the electrical system is back to normal.
+
+**Summary of required tools**  
+* Battery terminal brush (for cleaning)  
+* Torque wrench (for re‑torquing to spec)  
+
+Follow these steps exactly as outlined in the “Battery Terminal Corrosion” diagnostic procedure to restore a clean, properly torqued battery connection.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly describes the correct procedure and specifies the tools (battery terminal brush and torque wrench) needed to clean and re‑torque corroded battery terminals, which matches the question.'}",elec001,What is the proper method and tools for cleaning and re‑torquing corroded battery terminals?,RELEVANT,"The answer directly describes the correct procedure and specifies the tools (battery terminal brush and torque wrench) needed to clean and re‑torque corroded battery terminals, which matches the question."
+"{'issue_id': 'p0171-002', 'question': 'What is the proper fuel pressure for my engine and how do I measure it to diagnose a weak fuel pump or clogged filter?'}","**Proper fuel pressure**
+
+The database does not list a specific numeric pressure value for your engine.  
+The correct pressure is the value specified in the vehicle’s service‑manual or the manufacturer’s specifications for that particular model.  
+
+**How to measure fuel pressure (to check for a weak pump or a clogged filter)**  
+
+1. **Locate the fuel‑rail test port** – most modern fuel‑injected engines have a Schrader‑type valve on the fuel rail or a dedicated test fitting.  
+2. **Attach a fuel‑pressure gauge** – screw the gauge’s hose onto the test port, making sure the connection is tight to avoid leaks.  
+3. **Turn the ignition to the “ON” position** (engine off, key in the run position) so the fuel pump will prime the system.  
+4. **Read the pressure** on the gauge.  
+5. **Compare the reading** to the pressure value listed in the vehicle’s service manual.  
+   * If the pressure is **below** the specification, the pump may be weak or the fuel filter may be restricted.  
+   * If the pressure is **within** spec, the fuel delivery system is likely not the cause of the lean condition.  
+
+After measuring, you can proceed with the other diagnostic steps listed for the “System Too Lean” issues (e.g., checking vacuum hoses, MAF sensor, fuel trims). If the pressure is low, replace the fuel filter first, then retest; if it remains low, the fuel pump should be inspected or replaced.","{'Relevance': 'RELEVANT', 'Explanation': ""The answer directly addresses how to measure fuel pressure and explains that the correct pressure value must be obtained from the vehicle's service manual, which aligns with the question's request for diagnostic steps. While it does not provide a specific numeric pressure (because the data is unavailable), it supplies the necessary guidance to determine the proper pressure and diagnose a weak pump or clogged filter.""}",p0171-002,What is the proper fuel pressure for my engine and how do I measure it to diagnose a weak fuel pump or clogged filter?,RELEVANT,"The answer directly addresses how to measure fuel pressure and explains that the correct pressure value must be obtained from the vehicle's service manual, which aligns with the question's request for diagnostic steps. While it does not provide a specific numeric pressure (because the data is unavailable), it supplies the necessary guidance to determine the proper pressure and diagnose a weak pump or clogged filter."
+"{'issue_id': 'susp003', 'question': 'Will worn rear control arm bushings cause uneven tire wear or affect wheel alignment?'}","Yes. According to the database, worn rear‑upper control‑arm bushings are listed with **uneven tire wear** as a symptom, and the recommended repair procedure includes **aligning the wheels after the bushings are replaced**. This indicates that deteriorated rear control‑arm bushings can both lead to uneven tire wear and affect wheel alignment.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly addresses the question by confirming that worn rear control arm bushings can cause uneven tire wear and can affect wheel alignment, providing a concise and pertinent response.'}",susp003,Will worn rear control arm bushings cause uneven tire wear or affect wheel alignment?,RELEVANT,"The answer directly addresses the question by confirming that worn rear control arm bushings can cause uneven tire wear and can affect wheel alignment, providing a concise and pertinent response."
+"{'issue_id': 'cool001', 'question': 'What is the proper procedure for pressure testing the cooling system to locate a leak in the radiator hose?'}","**Procedure (as outlined in the diagnostic steps for a coolant leak at the radiator hose):**
+
+1. **Visual inspection** – First look at the radiator hoses for any cracks, bulges, or other damage.  
+2. **Clamp check** – Verify that the hose clamps are tight and secure.  
+3. **Pressure‑test the cooling system** – After the visual and clamp checks, connect a cooling‑system pressure tester and pressurize the system. Observe the system while it is under pressure; any drop in pressure or visible spray/steam will indicate the location of a leak, such as a cracked or loose radiator hose.  
+4. **Replace the hose** – If the pressure test confirms a leak in the hose, replace the damaged hose and re‑tighten the clamps.  
+
+These steps follow the exact sequence provided in the database for locating a radiator‑hose leak.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly outlines the procedure for pressure testing the cooling system to find a radiator hose leak, including visual inspection, clamp verification, applying pressure with a tester, and observing for pressure loss or spray, which aligns with the question.'}",cool001,What is the proper procedure for pressure testing the cooling system to locate a leak in the radiator hose?,RELEVANT,"The answer directly outlines the procedure for pressure testing the cooling system to find a radiator hose leak, including visual inspection, clamp verification, applying pressure with a tester, and observing for pressure loss or spray, which aligns with the question."
+"{'issue_id': 'cool001', 'question': 'How can I tell if the radiator hose clamp is the cause of the coolant leak?'}","To determine whether the hose clamp is responsible for the coolant leak, follow the steps that are listed under the **“Coolant Leak at Radiator Hose”** issue:
+
+1. **Inspect the hose and clamp visually**  
+   - Look at the area where the hose meets the radiator (or other fittings).  
+   - If the hose itself looks intact (no cracks or bulges) but you see the clamp sitting loosely, it’s a strong clue that the clamp may be the source.
+
+2. **Check the clamp tightness**  
+   - Press down on the clamp with a screwdriver or a clamp‑checking tool.  
+   - The clamp should be snug enough that the hose does not move or wiggle, but not so tight that it crushes the hose.  
+   - If the clamp feels loose or the hose can be lifted off the fitting, tighten the clamp to the proper torque (usually a firm hand‑tighten for standard spring‑type clamps).
+
+3. **Observe the leak after tightening**  
+   - After you have tightened the clamp, run the engine briefly and watch the hose area.  
+   - If the coolant puddle stops or the drip disappears, the clamp was the cause.  
+   - If coolant continues to leak, the problem likely lies elsewhere (cracked hose, high system pressure, etc.).
+
+4. **Optional: Pressure‑test the cooling system**  
+   - If you want extra confirmation, perform a pressure test on the cooling system (as noted in the diagnostic steps).  
+   - A pressure test will reveal whether the system holds pressure once the clamp is tightened. A persistent pressure loss indicates the leak is not solely from the clamp.
+
+**Bottom line:**  
+- A loose or improperly tightened hose clamp will show visible play in the hose and will stop leaking once you secure it.  
+- If tightening the clamp eliminates the leak, the clamp was the cause. If the leak persists, move on to inspecting the hose for cracks or testing system pressure.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly addresses the question by outlining specific steps—visual inspection, checking clamp tightness, testing after tightening, and optional pressure testing—to determine whether the radiator hose clamp is responsible for the coolant leak.'}",cool001,How can I tell if the radiator hose clamp is the cause of the coolant leak?,RELEVANT,"The answer directly addresses the question by outlining specific steps—visual inspection, checking clamp tightness, testing after tightening, and optional pressure testing—to determine whether the radiator hose clamp is responsible for the coolant leak."
+"{'issue_id': 'p0300-003', 'question': 'How can I determine if my spark plugs are the cause of the random/multiple cylinder misfire (P0300) code?'}","**How to tell whether the spark plugs are causing a P0300 (random/multiple‑cylinder misfire):**
+
+1. **Retrieve the P0300 code** – Confirm the misfire code is present in the scan tool.  
+2. **Perform a visual inspection of the plugs** – Remove each spark plug and look for the typical spark‑plug‑related problems listed in the database (excess carbon, oil fouling, worn electrodes, incorrect gap, etc.).  
+3. **Replace the plugs** – If any plug shows the above defects, install new plugs that meet the manufacturer’s specifications.  
+4. **Re‑run the scan** – After the new plugs are installed, clear the codes and drive the vehicle long enough for the PCM to re‑monitor the ignition system.  
+5. **Check the result** –  
+   * If the P0300 code does **not** return and the engine runs smoother, the spark plugs were the source of the misfire.  
+   * If the code **still** appears, the plugs are not the sole cause; continue with the next steps in the database (cylinder‑balance test, ignition‑coil resistance test, fuel‑pressure check, etc.).  
+
+By following the visual‑inspection‑and‑replace sequence described above, you can directly verify whether the spark plugs are responsible for the random/multiple‑cylinder misfire indicated by P0300.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly addresses the question by outlining specific steps (code verification, visual inspection of plugs, replacement, rescanning, and result evaluation) to determine whether the spark plugs are responsible for a P0300 misfire, which matches the request for a method to assess spark plug involvement.'}",p0300-003,How can I determine if my spark plugs are the cause of the random/multiple cylinder misfire (P0300) code?,RELEVANT,"The answer directly addresses the question by outlining specific steps (code verification, visual inspection of plugs, replacement, rescanning, and result evaluation) to determine whether the spark plugs are responsible for a P0300 misfire, which matches the request for a method to assess spark plug involvement."
+"{'issue_id': 'brk001', 'question': 'What are the safety risks and performance effects of driving with brake pads that are near the 3\u202fmm wear limit?'}","**Safety risks**
+
+- **Longer stopping distances** – When the pad thickness is at or below the 3 mm limit the friction surface is reduced, so the brakes cannot convert kinetic energy to heat as quickly. This directly translates into a longer distance needed to bring the vehicle to a stop, which is a clear safety hazard, especially in emergency‑braking situations.  
+- **Reduced braking reliability** – As the pads wear down they may no longer engage the rotor uniformly, increasing the chance that the driver will experience uneven or insufficient braking when it is most needed.  
+
+**Performance effects**
+
+- **Squealing noise** – A common symptom of pads that are near the minimum thickness is a high‑pitched squeal that occurs during light or moderate braking.  
+- **Brake‑pedal vibration** – When the pads are very thin the contact with the rotor can become uneven, leading to the pedal “shaking” that is reported for worn brake pads.  
+- **Potential rotor wear** – Although not a direct performance symptom, the diagnostic steps advise checking rotor condition because thin pads can allow the rotor surface to be damaged, which would further degrade braking performance.
+
+In short, driving with brake pads at or below the 3 mm wear limit compromises safety by increasing stopping distance and lowering braking reliability, and it degrades performance through audible squeal, pedal vibration, and possible rotor damage. Replacement should be done promptly once the pads reach this limit.","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly addresses both parts of the question by outlining specific safety risks (longer stopping distances, reduced braking reliability) and performance effects (squealing noise, pedal vibration, possible rotor wear) associated with brake pads near the 3\u202fmm wear limit.'}",brk001,What are the safety risks and performance effects of driving with brake pads that are near the 3 mm wear limit?,RELEVANT,"The answer directly addresses both parts of the question by outlining specific safety risks (longer stopping distances, reduced braking reliability) and performance effects (squealing noise, pedal vibration, possible rotor wear) associated with brake pads near the 3 mm wear limit."
+"{'issue_id': 'p0420-003', 'question': 'Which diagnostic steps should I follow to confirm a catalyst efficiency issue and rule out exhaust leaks or sensor malfunctions?'}","**Diagnostic steps to confirm a catalyst‑efficiency problem while eliminating the possibility of an exhaust leak or a faulty sensor**
+
+1. **Read the diagnostic trouble code** – Scan the PCM for the P0420 “Catalyst System Efficiency Below Threshold (Bank 1)” code. Confirm that this is the stored code before proceeding.
+
+2. **Check the oxygen‑sensor voltages** – Measure the voltage (or equivalence‑ratio) of the upstream (pre‑catalyst) and downstream (post‑catalyst) O₂ sensors while the engine is at operating temperature.  
+   - The upstream sensor should swing between ~0.1 V (lean) and ~0.9 V (rich).  
+   - The downstream sensor should show a relatively steady voltage (typically 0.4–0.6 V) if the catalyst is functioning.  
+   - A downstream sensor that mimics the upstream sensor indicates a sensor malfunction rather than a catalyst problem.
+
+3. **Inspect the exhaust system for leaks** – Visually and physically examine the exhaust manifold, piping, and connections upstream of the catalytic converter for any cracks, loose joints, or holes that could introduce false O₂‑sensor readings.
+
+4. **Conduct a catalyst temperature test** – Use a temperature probe (or infrared thermometer) to measure the temperature just before and just after the catalytic converter while the engine is at normal operating load.  
+   - A healthy catalyst will produce a noticeable temperature rise (generally 100 °C–200 °C) across the converter.  
+   - Little or no temperature differential suggests a clogged or failed catalyst.
+
+5. **Verify fuel‑trim values** – Review short‑term and long‑term fuel‑trim data from the scan tool. Excessive positive or negative trim can indicate that the engine is compensating for a sensor error or catalyst inefficiency.
+
+**By completing these five steps—code verification, O₂‑sensor voltage checks, exhaust‑leak inspection, temperature differential testing, and fuel‑trim review—you’ll be able to confirm whether the catalyst efficiency is truly out of spec and rule out the common false‑positive causes of exhaust leaks or sensor malfunctions.**","{'Relevance': 'RELEVANT', 'Explanation': 'The answer directly lists specific diagnostic procedures (code reading, O2 sensor voltage checks, exhaust leak inspection, catalyst temperature test, and fuel‑trim verification) that address confirming catalyst efficiency and ruling out exhaust leaks or sensor malfunctions, matching the question’s request.'}",p0420-003,Which diagnostic steps should I follow to confirm a catalyst efficiency issue and rule out exhaust leaks or sensor malfunctions?,RELEVANT,"The answer directly lists specific diagnostic procedures (code reading, O2 sensor voltage checks, exhaust leak inspection, catalyst temperature test, and fuel‑trim verification) that address confirming catalyst efficiency and ruling out exhaust leaks or sensor malfunctions, matching the question’s request."

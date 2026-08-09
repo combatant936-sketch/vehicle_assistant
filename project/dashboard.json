@@ -385,7 +385,7 @@
                     "editorMode": "code",
                     "format": "table",
                     "rawQuery": true,
-                    "rawSql": "SELECT\r\n  timestamp AS time,\r\n  openai_cost\r\nFROM conversations\r\nWHERE openai_cost > 0\r\nORDER BY timestamp\r\n",
+                    "rawSql": "SELECT\r\n  timestamp AS time,\r\n  groq_cost\r\nFROM conversations\r\nWHERE groq_cost > 0\r\nORDER BY timestamp\r\n",
                     "refId": "A",
                     "sql": {
                         "columns": [
