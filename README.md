@@ -184,6 +184,8 @@ curl -X POST http://localhost:8001/question \
   "answera": "Based on the provided CONTEXT, engine misfires can be caused by worn spark plugs, faulty ignition coils, low fuel pressure, or vacuum leaks..."
 }
 ```
+![Alt text](images/i1.png)
+![Alt text](images/i2.png)
 
 ### 2. Submit User Feedback (`POST /feedback`)
 
@@ -207,6 +209,9 @@ curl -X POST http://localhost:8001/feedback \
 
 ---
 
+![Alt text](images/i3.png)
+![Alt text](images/i4.png)
+
 ## 📊 Analytics & Grafana Dashboard
 
 Open your browser and navigate to:
@@ -225,6 +230,8 @@ http://localhost:3000
 - 👍 **User Feedback**: Aggregated thumbs up (+1) vs thumbs down (-1) metrics.
 
 ---
+![Alt text](images/i5.png)
+![Alt text](images/i6.png)
 
 ## ⚙️ Useful Management Commands
 
@@ -240,4 +247,6 @@ docker compose exec postgres psql -U user -d vehicle_assistant -c "SELECT questi
 
 # Stop all services
 docker compose down
+
+# if grafana or other docker containers not running just rerun that image or container
 ```
