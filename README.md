@@ -248,5 +248,5 @@ docker compose exec postgres psql -U user -d vehicle_assistant -c "SELECT questi
 # Stop all services
 docker compose down
 
-# if grafana or other docker containers not running just rerun that image or container
+if grafana or other docker containers not running just rerun that image or container
 ```
