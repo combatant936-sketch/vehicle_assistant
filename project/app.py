@@ -1,7 +1,7 @@
 import uuid
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from project.rag import rag
+import project.versions.v2.rag as rag
 import project.db as db
 from typing import Optional, Any,Literal
 
@@ -13,7 +13,7 @@ class QuestionRequest(BaseModel):
 class AnswerResponse(BaseModel):
     conversation_id: str
     question: str
-    answer: str
+    answera: str
 
 class FeedbackRequest(BaseModel):
     conversation_id: str
@@ -27,19 +27,23 @@ def handle_question(request: QuestionRequest):
         raise HTTPException(status_code=400, detail="No question provided")
 
     conversation_id = str(uuid.uuid4())
-    answer_data = rag(question)
+    result=rag.query(question)
+
+    # print("########################",result)
+    
 
     db.save_conversation(
         conversation_id=conversation_id,
         question=question,
-        answer_data=answer_data,
+        answer_data=result,
     )
 
     return AnswerResponse(
         conversation_id=conversation_id,
         question=question,
-        answer=answer_data["answer"],
+        answera=result["answer"],
     )
+
 
 
 @app.post("/feedback")
