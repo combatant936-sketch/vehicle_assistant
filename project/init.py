@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-GRAFANA_URL = "http://localhost:3000"
+GRAFANA_URL = os.getenv("GRAFANA_URL", "http://grafana:3000")
 
 GRAFANA_USER = os.getenv("GRAFANA_ADMIN_USER")
 GRAFANA_PASSWORD = os.getenv("GRAFANA_ADMIN_PASSWORD")
@@ -85,10 +85,14 @@ def create_or_update_datasource(api_key):
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
     }
+    
+    # Use a consistent UID for the datasource
+    consistent_uid = "vehicle-assistant-postgres"
+    
     datasource_payload = {
         "name": "PostgreSQL",
-        "type": "postgres",
-        "url": f"{PG_HOST}:{PG_PORT}",
+        "type": "grafana-postgresql-datasource",
+        "url": "postgres:5432",
         "access": "proxy",
         "user": PG_USER,
         "database": PG_DB,
@@ -96,24 +100,23 @@ def create_or_update_datasource(api_key):
         "isDefault": True,
         "jsonData": {"sslmode": "disable", "postgresVersion": 1300},
         "secureJsonData": {"password": PG_PASSWORD},
+        "uid": consistent_uid  # Set consistent UID
     }
 
     print("Datasource payload:")
     print(json.dumps(datasource_payload, indent=2))
 
-    # First, try to get the existing datasource
+    # First, try to get the existing datasource by UID
     response = requests.get(
-        f"{GRAFANA_URL}/api/datasources/name/{datasource_payload['name']}",
+        f"{GRAFANA_URL}/api/datasources/uid/{consistent_uid}",
         headers=headers,
     )
 
     if response.status_code == 200:
-        # Datasource exists, update it using its UID
-        existing_datasource = response.json()
-        datasource_uid = existing_datasource["uid"]
-        print(f"Updating existing datasource with uid: {datasource_uid}")
+        # Datasource exists, update it
+        print(f"Updating existing datasource with uid: {consistent_uid}")
         response = requests.put(
-            f"{GRAFANA_URL}/api/datasources/uid/{datasource_uid}",
+            f"{GRAFANA_URL}/api/datasources/uid/{consistent_uid}",
             headers=headers,
             json=datasource_payload,
         )
@@ -129,7 +132,7 @@ def create_or_update_datasource(api_key):
 
     if response.status_code in [200, 201]:
         print("Datasource created or updated successfully")
-        return response.json().get("datasource", {}).get("uid") or response.json().get("uid")
+        return consistent_uid  # Return the consistent UID
     else:
         print(f"Failed to create or update datasource: {response.text}")
         return None
@@ -157,10 +160,13 @@ def create_dashboard(api_key, datasource_uid):
     # Update datasource UID in the dashboard JSON
     panels_updated = 0
     for panel in dashboard_json.get("panels", []):
+        # Update panel-level datasource
         if isinstance(panel.get("datasource"), dict):
             panel["datasource"]["uid"] = datasource_uid
             panels_updated += 1
-        elif isinstance(panel.get("targets"), list):
+        
+        # Update target-level datasources
+        if isinstance(panel.get("targets"), list):
             for target in panel["targets"]:
                 if isinstance(target.get("datasource"), dict):
                     target["datasource"]["uid"] = datasource_uid

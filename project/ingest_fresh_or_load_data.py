@@ -87,7 +87,7 @@ def create_or_load_vectorstore():
     If persist_dir exists -> load it.
     If not -> remove any stale/partial dir, then ingest from DATA_PATH.
     """
-    embeddings = Embedder(path="../models/Xenova/all-MiniLM-L6-v2")
+    embeddings = Embedder(path="models/Xenova/all-MiniLM-L6-v2")
     if os.path.exists(PERSIST_DIR):
         print(f"Found existing vectorstore at {PERSIST_DIR}, loading it.")
         return Chroma(

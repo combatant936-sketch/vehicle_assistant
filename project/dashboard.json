@@ -30,8 +30,8 @@
     "panels": [
         {
             "datasource": {
-                "type": "postgres",
-                "uid": "fJMbpi3Iz"
+                "type": "grafana-postgresql-datasource",
+                "uid": "vehicle-assistant-postgres"
             },
             "fieldConfig": {
                 "defaults": {
@@ -107,13 +107,13 @@
             "targets": [
                 {
                     "datasource": {
-                        "type": "postgres",
-                        "uid": "BmSh7SuIk"
+                        "type": "grafana-postgresql-datasource",
+                        "uid": "vehicle-assistant-postgres"
                     },
                     "editorMode": "code",
                     "format": "table",
                     "rawQuery": true,
-                    "rawSql": "SELECT\r\n  timestamp AS time,\r\n  question,\r\n  answer,\r\n  relevance\r\nFROM conversations\r\nWHERE timestamp BETWEEN $__timeFrom() AND $__timeTo()\r\nORDER BY timestamp DESC\r\nLIMIT 5\r\n",
+                    "rawSql": "SELECT\r\n  timestamp AS time,\r\n  question,\r\n  answer,\r\n  relevance\r\nFROM conversations\r\nORDER BY timestamp DESC\r\nLIMIT 5\r\n",
                     "refId": "A",
                     "sql": {
                         "columns": [
@@ -139,8 +139,8 @@
         },
         {
             "datasource": {
-                "type": "postgres",
-                "uid": "fJMbpi3Iz"
+                "type": "grafana-postgresql-datasource",
+                "uid": "vehicle-assistant-postgres"
             },
             "fieldConfig": {
                 "defaults": {
@@ -191,8 +191,8 @@
             "targets": [
                 {
                     "datasource": {
-                        "type": "postgres",
-                        "uid": "BmSh7SuIk"
+                        "type": "grafana-postgresql-datasource",
+                        "uid": "vehicle-assistant-postgres"
                     },
                     "editorMode": "code",
                     "format": "table",
@@ -223,8 +223,8 @@
         },
         {
             "datasource": {
-                "type": "postgres",
-                "uid": "fJMbpi3Iz"
+                "type": "grafana-postgresql-datasource",
+                "uid": "vehicle-assistant-postgres"
             },
             "fieldConfig": {
                 "defaults": {
@@ -270,8 +270,8 @@
             "targets": [
                 {
                     "datasource": {
-                        "type": "postgres",
-                        "uid": "BmSh7SuIk"
+                        "type": "grafana-postgresql-datasource",
+                        "uid": "vehicle-assistant-postgres"
                     },
                     "editorMode": "code",
                     "format": "table",
@@ -302,8 +302,8 @@
         },
         {
             "datasource": {
-                "type": "postgres",
-                "uid": "fJMbpi3Iz"
+                "type": "grafana-postgresql-datasource",
+                "uid": "vehicle-assistant-postgres"
             },
             "fieldConfig": {
                 "defaults": {
@@ -379,8 +379,8 @@
             "targets": [
                 {
                     "datasource": {
-                        "type": "postgres",
-                        "uid": "BmSh7SuIk"
+                        "type": "grafana-postgresql-datasource",
+                        "uid": "vehicle-assistant-postgres"
                     },
                     "editorMode": "code",
                     "format": "table",
@@ -406,13 +406,13 @@
                     }
                 }
             ],
-            "title": "OpenAI cost",
+            "title": "GROQ cost",
             "type": "timeseries"
         },
         {
             "datasource": {
-                "type": "postgres",
-                "uid": "fJMbpi3Iz"
+                "type": "grafana-postgresql-datasource",
+                "uid": "vehicle-assistant-postgres"
             },
             "fieldConfig": {
                 "defaults": {
@@ -488,8 +488,8 @@
             "targets": [
                 {
                     "datasource": {
-                        "type": "postgres",
-                        "uid": "BmSh7SuIk"
+                        "type": "grafana-postgresql-datasource",
+                        "uid": "vehicle-assistant-postgres"
                     },
                     "editorMode": "code",
                     "format": "table",
@@ -520,8 +520,8 @@
         },
         {
             "datasource": {
-                "type": "postgres",
-                "uid": "fJMbpi3Iz"
+                "type": "grafana-postgresql-datasource",
+                "uid": "vehicle-assistant-postgres"
             },
             "fieldConfig": {
                 "defaults": {
@@ -596,8 +596,8 @@
             "targets": [
                 {
                     "datasource": {
-                        "type": "postgres",
-                        "uid": "BmSh7SuIk"
+                        "type": "grafana-postgresql-datasource",
+                        "uid": "vehicle-assistant-postgres"
                     },
                     "editorMode": "code",
                     "format": "table",
@@ -628,8 +628,8 @@
         },
         {
             "datasource": {
-                "type": "postgres",
-                "uid": "fJMbpi3Iz"
+                "type": "grafana-postgresql-datasource",
+                "uid": "vehicle-assistant-postgres"
             },
             "fieldConfig": {
                 "defaults": {
@@ -705,8 +705,8 @@
             "targets": [
                 {
                     "datasource": {
-                        "type": "postgres",
-                        "uid": "BmSh7SuIk"
+                        "type": "grafana-postgresql-datasource",
+                        "uid": "vehicle-assistant-postgres"
                     },
                     "editorMode": "code",
                     "format": "table",
@@ -734,6 +734,534 @@
             ],
             "title": "Response time",
             "type": "timeseries"
+        },
+        {
+            "datasource": {
+                "type": "grafana-postgresql-datasource",
+                "uid": "vehicle-assistant-postgres"
+            },
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "thresholds"
+                    },
+                    "custom": {
+                        "align": "auto",
+                        "displayMode": "auto"
+                    },
+                    "mappings": []
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 8,
+                "w": 24,
+                "x": 0,
+                "y": 33
+            },
+            "id": 15,
+            "options": {
+                "showHeader": true
+            },
+            "targets": [
+                {
+                    "datasource": {
+                        "type": "grafana-postgresql-datasource",
+                        "uid": "vehicle-assistant-postgres"
+                    },
+                    "editorMode": "code",
+                    "format": "table",
+                    "rawQuery": true,
+                    "rawSql": "SELECT\r\n  to_timestamp(start_time / 1e9) AS time,\r\n  name,\r\n  input_tokens,\r\n  output_tokens,\r\n  cost,\r\n  (end_time - start_time) / 1e6 AS duration_ms\r\nFROM spans\r\nORDER BY start_time DESC\r\nLIMIT 10",
+                    "refId": "A"
+                }
+            ],
+            "title": "Recent Span Operations",
+            "type": "table"
+        },
+        {
+            "datasource": {
+                "type": "grafana-postgresql-datasource",
+                "uid": "vehicle-assistant-postgres"
+            },
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "palette-classic"
+                    },
+                    "custom": {
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "drawStyle": "line",
+                        "fillOpacity": 10,
+                        "gradientMode": "none",
+                        "hideFrom": {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution": {
+                            "type": "linear"
+                        },
+                        "showPoints": "never",
+                        "spanNulls": false,
+                        "stacking": {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle": {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings": [],
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 8,
+                "w": 12,
+                "x": 0,
+                "y": 41
+            },
+            "id": 16,
+            "options": {
+                "legend": {
+                    "calcs": [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip": {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets": [
+                {
+                    "datasource": {
+                        "type": "grafana-postgresql-datasource",
+                        "uid": "vehicle-assistant-postgres"
+                    },
+                    "editorMode": "code",
+                    "format": "time_series",
+                    "rawQuery": true,
+                    "rawSql": "SELECT\r\n  to_timestamp(start_time / 1e9) AS time,\r\n  input_tokens\r\nFROM spans\r\nWHERE input_tokens IS NOT NULL\r\nORDER BY start_time",
+                    "refId": "A"
+                }
+            ],
+            "title": "Input Tokens Over Time",
+            "type": "timeseries"
+        },
+        {
+            "datasource": {
+                "type": "grafana-postgresql-datasource",
+                "uid": "vehicle-assistant-postgres"
+            },
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "palette-classic"
+                    },
+                    "custom": {
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "drawStyle": "line",
+                        "fillOpacity": 10,
+                        "gradientMode": "none",
+                        "hideFrom": {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution": {
+                            "type": "linear"
+                        },
+                        "showPoints": "never",
+                        "spanNulls": false,
+                        "stacking": {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle": {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings": [],
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 8,
+                "w": 12,
+                "x": 12,
+                "y": 41
+            },
+            "id": 17,
+            "options": {
+                "legend": {
+                    "calcs": [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip": {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets": [
+                {
+                    "datasource": {
+                        "type": "grafana-postgresql-datasource",
+                        "uid": "vehicle-assistant-postgres"
+                    },
+                    "editorMode": "code",
+                    "format": "time_series",
+                    "rawQuery": true,
+                    "rawSql": "SELECT\r\n  to_timestamp(start_time / 1e9) AS time,\r\n  output_tokens\r\nFROM spans\r\nWHERE output_tokens IS NOT NULL\r\nORDER BY start_time",
+                    "refId": "A"
+                }
+            ],
+            "title": "Output Tokens Over Time",
+            "type": "timeseries"
+        },
+        {
+            "datasource": {
+                "type": "grafana-postgresql-datasource",
+                "uid": "vehicle-assistant-postgres"
+            },
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "palette-classic"
+                    },
+                    "custom": {
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "drawStyle": "line",
+                        "fillOpacity": 10,
+                        "gradientMode": "none",
+                        "hideFrom": {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution": {
+                            "type": "linear"
+                        },
+                        "showPoints": "never",
+                        "spanNulls": false,
+                        "stacking": {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle": {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings": [],
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    },
+                    "unit": "currencyUSD"
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 8,
+                "w": 12,
+                "x": 0,
+                "y": 49
+            },
+            "id": 18,
+            "options": {
+                "legend": {
+                    "calcs": [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip": {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets": [
+                {
+                    "datasource": {
+                        "type": "grafana-postgresql-datasource",
+                        "uid": "vehicle-assistant-postgres"
+                    },
+                    "editorMode": "code",
+                    "format": "time_series",
+                    "rawQuery": true,
+                    "rawSql": "SELECT\r\n  to_timestamp(start_time / 1e9) AS time,\r\n  cost\r\nFROM spans\r\nWHERE cost IS NOT NULL\r\nORDER BY start_time",
+                    "refId": "A"
+                }
+            ],
+            "title": "Cost Over Time",
+            "type": "timeseries"
+        },
+        {
+            "datasource": {
+                "type": "grafana-postgresql-datasource",
+                "uid": "vehicle-assistant-postgres"
+            },
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "palette-classic"
+                    },
+                    "custom": {
+                        "axisCenteredZero": false,
+                        "axisColorMode": "text",
+                        "axisLabel": "",
+                        "axisPlacement": "auto",
+                        "barAlignment": 0,
+                        "drawStyle": "line",
+                        "fillOpacity": 10,
+                        "gradientMode": "none",
+                        "hideFrom": {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        },
+                        "lineInterpolation": "linear",
+                        "lineWidth": 1,
+                        "pointSize": 5,
+                        "scaleDistribution": {
+                            "type": "linear"
+                        },
+                        "showPoints": "never",
+                        "spanNulls": false,
+                        "stacking": {
+                            "group": "A",
+                            "mode": "none"
+                        },
+                        "thresholdsStyle": {
+                            "mode": "off"
+                        }
+                    },
+                    "mappings": [],
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    },
+                    "unit": "ms"
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 8,
+                "w": 12,
+                "x": 12,
+                "y": 49
+            },
+            "id": 19,
+            "options": {
+                "legend": {
+                    "calcs": [],
+                    "displayMode": "list",
+                    "placement": "bottom",
+                    "showLegend": true
+                },
+                "tooltip": {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets": [
+                {
+                    "datasource": {
+                        "type": "grafana-postgresql-datasource",
+                        "uid": "vehicle-assistant-postgres"
+                    },
+                    "editorMode": "code",
+                    "format": "time_series",
+                    "rawQuery": true,
+                    "rawSql": "SELECT\r\n  to_timestamp(start_time / 1e9) AS time,\r\n  (end_time - start_time) / 1e6 AS duration_ms\r\nFROM spans\r\nORDER BY start_time",
+                    "refId": "A"
+                }
+            ],
+            "title": "Operation Duration",
+            "type": "timeseries"
+        },
+        {
+            "datasource": {
+                "type": "grafana-postgresql-datasource",
+                "uid": "vehicle-assistant-postgres"
+            },
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "palette-classic"
+                    },
+                    "custom": {
+                        "hideFrom": {
+                            "legend": false,
+                            "tooltip": false,
+                            "viz": false
+                        }
+                    },
+                    "mappings": []
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 8,
+                "w": 12,
+                "x": 0,
+                "y": 57
+            },
+            "id": 20,
+            "options": {
+                "displayLabels": [
+                    "name",
+                    "value"
+                ],
+                "legend": {
+                    "displayMode": "table",
+                    "placement": "right",
+                    "showLegend": true,
+                    "values": [
+                        "value"
+                    ]
+                },
+                "pieType": "pie",
+                "reduceOptions": {
+                    "calcs": [
+                        "lastNotNull"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "tooltip": {
+                    "mode": "single",
+                    "sort": "none"
+                }
+            },
+            "targets": [
+                {
+                    "datasource": {
+                        "type": "grafana-postgresql-datasource",
+                        "uid": "vehicle-assistant-postgres"
+                    },
+                    "editorMode": "code",
+                    "format": "table",
+                    "rawQuery": true,
+                    "rawSql": "SELECT\r\n  name,\r\n  COUNT(*) as count\r\nFROM spans\r\nGROUP BY name",
+                    "refId": "A"
+                }
+            ],
+            "title": "Operation Types",
+            "type": "piechart"
+        },
+        {
+            "datasource": {
+                "type": "grafana-postgresql-datasource",
+                "uid": "vehicle-assistant-postgres"
+            },
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "thresholds"
+                    },
+                    "custom": {
+                        "align": "auto",
+                        "displayMode": "auto"
+                    },
+                    "mappings": []
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 8,
+                "w": 12,
+                "x": 12,
+                "y": 57
+            },
+            "id": 21,
+            "options": {
+                "showHeader": true
+            },
+            "targets": [
+                {
+                    "datasource": {
+                        "type": "grafana-postgresql-datasource",
+                        "uid": "vehicle-assistant-postgres"
+                    },
+                    "editorMode": "code",
+                    "format": "table",
+                    "rawQuery": true,
+                    "rawSql": "SELECT\r\n  name,\r\n  COUNT(*) as total_operations,\r\n  AVG(input_tokens) as avg_input_tokens,\r\n  AVG(output_tokens) as avg_output_tokens,\r\n  AVG(cost) as avg_cost,\r\n  AVG((end_time - start_time) / 1e6) as avg_duration_ms\r\nFROM spans\r\nGROUP BY name",
+                    "refId": "A"
+                }
+            ],
+            "title": "Operation Statistics",
+            "type": "table"
         }
     ],
     "refresh": "30s",
