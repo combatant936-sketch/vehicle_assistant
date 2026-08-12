@@ -1,128 +1,91 @@
 issue_id,issue_name,obd_code,system,component,severity,symptoms,likely_causes,diagnostic_steps,diy_or_mechanic
-p0171-001,System Too Lean (Bank 1),P0171,Engine,Fuel System,Medium,"Check engine light, rough idle, poor acceleration","Vacuum leak, clogged fuel filter, faulty MAF sensor",1. Scan for code P0171. 2. Inspect vacuum hoses for cracks. 3. Check MAF sensor voltage and clean if dirty. 4. Measure fuel pressure.,DIY
-p0300-002,Random/Multiple Cylinder Misfire Detected,P0300,Engine,Ignition System,High,"Engine shake, loss of power, increased fuel consumption","Worn spark plugs, faulty ignition coils, low fuel pressure",1. Retrieve code P0300. 2. Perform spark plug visual inspection and replace if needed. 3. Test coil resistance. 4. Check fuel pump operation.,Mechanic Recommended
-p0420-003,Catalyst System Efficiency Below Threshold,P0420,Engine,Catalytic Converter,Medium,"Check engine light, reduced fuel economy, possible sulfur smell","Failed catalytic converter, upstream O2 sensor malfunction, exhaust leaks",1. Confirm code P0420. 2. Conduct O2 sensor voltage sweep test. 3. Inspect exhaust for leaks. 4. Perform temperature check across catalytic converter.,Mechanic Required
-p0455-004,EVAP System Large Leak Detected,P0455,Engine,EVAP System,Low,"Check engine light, occasional fuel odor","Loose fuel cap, cracked EVAP hose, faulty purge valve",1. Verify code P0455. 2. Tighten or replace fuel cap. 3. Perform smoke test on EVAP lines. 4. Test purge valve operation.,DIY
-trans001,Transmission Slip at Low Speeds,N/A,Transmission,Torque Converter,High,"Engine revs rise without acceleration, shudder feeling","Worn torque converter clutch, low transmission fluid, internal clutch wear",1. Check transmission fluid level and condition. 2. Scan for any transmission-specific codes. 3. Perform road test to note slip patterns. 4. Inspect torque converter if fluid is adequate.,Mechanic Required
-brk001,Brake Pedal Pulsation,N/A,Brakes,Brake Rotors,Medium,"Vibration in pedal when braking, noise","Warped brake rotors, uneven pad wear",1. Visual inspection of rotor thickness and runout. 2. Measure rotor runout with dial indicator. 3. Check brake pad condition.,DIY
-elec001,Intermittent Battery Drain,N/A,Electrical,Battery/Charging System,Medium,"Dim lights, difficulty starting, battery warning light","Parasitic draw from aftermarket accessories, faulty alternator diode, loose ground",1. Perform parasitic draw test with multimeter. 2. Inspect alternator output voltage. 3. Check battery terminals for corrosion.,DIY
-susp001,Uneven Tire Wear Due to Worn Control Arm Bushings,N/A,Suspension,Control Arm Bushings,Low,"Uneven tire wear, clunking noise over bumps","Aged rubber bushings, exposure to road salt",1. Inspect control arm bushings for cracks or looseness. 2. Check alignment angles. 3. Perform bounce test on each wheel.,DIY
-cool001,Engine Overheating – Coolant Leak,N/A,Cooling,Radiator Hose,Critical,"Temperature gauge rising, coolant puddle under vehicle, steam","Cracked radiator hose, loose clamp, damaged radiator",1. Visual inspection of hoses for cracks or bulges. 2. Pressure test cooling system. 3. Check coolant level and refill if low.,DIY
-elec002,ABS Warning Light On,N/A,Brakes,ABS Wheel Speed Sensors,Medium,"ABS light illuminated, occasional loss of ABS function","Dirty or damaged wheel speed sensor, broken sensor wire, faulty ABS module",1. Scan ABS system for codes. 2. Inspect sensor rings for debris. 3. Test sensor resistance with multimeter. 4. Check wiring harness for damage.,Mechanic Recommended
-p0171-002,System Too Lean (Bank 2),P0171,Engine,Air Intake System,Medium,"Check engine light, rough idle, poor fuel economy","Vacuum leak, clogged air filter, faulty MAF sensor",1. Scan for code P0171. 2. Inspect all vacuum hoses for cracks. 3. Check air filter condition and replace if dirty. 4. Test MAF sensor voltage with a multimeter. 5. Clear code and road test.,DIY
-p0300-001,Random/Multiple Cylinder Misfire Detected,P0300,Engine,Ignition System,High,"Check engine light, engine vibration, loss of power","Worn spark plugs, bad ignition coils, low fuel pressure",1. Retrieve code P0300. 2. Inspect spark plugs for wear and replace if needed. 3. Swap ignition coils between cylinders and watch for code change. 4. Test fuel pressure at rail. 5. Clear codes and perform a drive cycle.,Mechanic Recommended
-p0420-003,Catalyst System Efficiency Below Threshold (Bank 1),P0420,Exhaust,Catalytic Converter,Medium,"Check engine light, reduced performance, possible odor","Failed catalytic converter, upstream O2 sensor failure, exhaust leak",1. Confirm code P0420. 2. Perform O2 sensor voltage test pre- and post-cat. 3. Inspect exhaust manifold for leaks. 4. Use a temperature probe to check cat temperature differential. 5. Replace cat if temperature rise is insufficient.,Mechanic Required
-p0455-001,EVAP System Large Leak Detected,P0455,Emission,EVAP Canister,Low,"Check engine light, occasional fuel odor","Loose gas cap, cracked EVAP hose, faulty purge valve",1. Verify code P0455. 2. Tighten or replace gas cap. 3. Perform smoke test on EVAP lines. 4. Test purge valve operation with a multimeter. 5. Clear code and monitor.,DIY
-p0700-001,Transmission Control Module (TCM) Malfunction,P0700,Transmission,TCM,High,"Transmission warning light, erratic shifting, gear slippage","Faulty TCM, wiring issues, low transmission fluid",1. Scan for P0700 and related sub‑codes. 2. Check transmission fluid level and condition. 3. Inspect TCM connectors for corrosion. 4. Perform TCM reflash or replacement as needed. 5. Clear codes and test drive.,Mechanic Required
-brk001,Brake Pad Wear – Front,N/A,Brakes,Brake Pads,Medium,"Squealing noise, longer stopping distance, brake pedal feel change","Normal wear, aggressive driving, low-quality pads",1. Visual inspection of front pad thickness (<3mm triggers replace). 2. Check brake rotors for scoring. 3. Measure rotor thickness. 4. Replace pads and resurface/replace rotors if needed. 5. Bed new pads.,DIY
-elec002,Intermittent Power Steering Assist Failure,N/A,Electrical,Power Steering Motor,High,"Heavy steering at low speeds, steering wheel vibration","Failing electric power steering motor, loose wiring, low battery voltage",1. Check battery voltage (>12.6V). 2. Scan for any EPS-related DTCs. 3. Inspect EPS motor connector and wiring for corrosion. 4. Perform motor resistance test. 5. Replace motor if out of spec.,Mechanic Recommended
-sus001,Rear Suspension Sag – Leaf Spring,N/A,Suspension,Rear Leaf Spring,Medium,"Rear sag, uneven rear tire wear, clunking noise over bumps","Leaf spring fatigue, broken eye bolts, overloaded vehicle",1. Measure rear ride height compared to spec. 2. Inspect leaf springs for cracks or sag. 3. Check eye bolts for looseness. 4. Replace damaged spring or bolts. 5. Re‑align rear wheels after repair.,DIY
-cool001,Engine Overheating – Radiator Fan Failure,N/A,Cooling,Radiator Fan,Critical,"Temperature gauge rising, coolant boiling, fan not turning on","Failed fan motor, blown fuse, faulty coolant temperature sensor",1. Verify fan operation with engine at operating temperature. 2. Check fan fuse and relay. 3. Test coolant temperature sensor resistance. 4. Apply 12V directly to fan to confirm motor. 5. Replace faulty component.,Mechanic Required
-p0500-001,Vehicle Speed Sensor (VSS) Malfunction,P0500,Transmission,Vehicle Speed Sensor,Medium,"Speedometer stuck, erratic cruise control, transmission shift issues","Faulty VSS, damaged wiring, dirty sensor",1. Scan for P0500. 2. Locate VSS on transmission output shaft. 3. Measure sensor voltage while rotating wheel. 4. Inspect wiring harness for damage. 5. Replace VSS if out of spec and clear code.,DIY
-p0171-001,System Too Lean (Bank 1),P0171,Engine,Air Intake System,Medium,"Check engine light, rough idle, reduced fuel efficiency","Vacuum leak, clogged air filter, faulty MAF sensor","1. Scan for code P0171.
-2. Inspect all vacuum hoses for cracks.
-3. Check air filter condition and replace if dirty.
-4. Test MAF sensor voltage output with a multimeter.
-5. Perform a fuel trim reading using live data.",DIY
-p0300-002,Random/Multiple Cylinder Misfire Detected,P0300,Engine,Ignition System,High,"Check engine light, engine vibration, loss of power","Worn spark plugs, ignition coil failure, low fuel pressure","1. Retrieve P0300 code.
-2. Use oscilloscope to check coil primary/secondary waveforms.
-3. Inspect spark plug gaps and condition.
-4. Perform fuel pressure test.
-5. Clear codes and perform a road test to see if code returns.",Mechanic Recommended
-p0420-003,Catalyst System Efficiency Below Threshold (Bank 2),P0420,Exhaust,Catalytic Converter,Medium,"Check engine light, reduced fuel economy, possible sulfur smell","Failed catalytic converter, oxygen sensor malfunction, exhaust leak before sensor","1. Verify P0420 code.
-2. Inspect downstream O2 sensor voltage (should be stable).
-3. Check for exhaust leaks near the converter.
-4. Perform a catalyst efficiency test with a scan tool.
-5. Replace converter if efficiency below spec.",Mechanic Required
-p0455-004,EVAP System Large Leak Detected,P0455,Evaporative Emissions,EVAP Hose/Canister,Low,"Check engine light, occasional fuel odor","Loose or cracked EVAP hose, faulty purge valve, damaged charcoal canister","1. Scan for P0455.
-2. Perform a visual inspection of all EVAP hoses and connections.
-3. Use a smoke machine to locate leaks.
-4. Test purge valve operation with a multimeter.
-5. Replace defective hose or component.",DIY
-trans001,Transmission Fluid Overheating,N/A,Transmission,Transmission Cooler,High,"Shift delays, transmission overheating warning, slipping gears","Clogged cooler, low fluid level, faulty temperature sensor","1. Check transmission fluid level and condition.
-2. Scan for any transmission-related codes (e.g., P0700).
-3. Inspect cooler lines for blockages or leaks.
-4. Test transmission temperature sensor resistance.
-5. Flush and replace fluid if dirty or low.",Mechanic Required
-brk001,Brake Caliper Sticking,N/A,Brakes,Brake Caliper,Medium,"Pulling to one side, uneven brake pad wear, brake pedal feels soft","Corroded caliper pins, seized piston, contaminated brake fluid","1. Observe wheel movement when applying brakes.
-2. Remove wheel and inspect caliper slide pins for corrosion.
-3. Check piston movement by removing caliper bolt.
-4. Bleed brake system to remove any contaminated fluid.
-5. Replace or rebuild caliper as needed.",Mechanic Recommended
-elec001,Faulty Power Window Regulator,N/A,Electrical,Window Regulator,Low,"Window moves slowly or gets stuck, clicking noise","Broken cable, worn gear, failed motor","1. Activate window switch and listen for motor sound.
-2. Remove door panel and inspect regulator for broken cables.
-3. Test motor voltage with a multimeter while switch is engaged.
-4. Replace regulator or motor as required.",DIY
-susp001,Front Strut Leak,N/A,Suspension,Strut Assembly,Medium,"Nose dive during braking, uneven ride height, leaking fluid","Damaged strut seal, worn bearing, impact damage","1. Inspect struts for oil residue or spray on the shaft.
-2. Check for sag by measuring ride height on both corners.
-3. Perform bounce test to assess damping.
-4. Replace strut assembly if leak is confirmed.",Mechanic Recommended
-cool001,Thermostat Stuck Closed,N/A,Cooling,Thermostat,Critical,"Engine overheating, coolant temperature spikes, warning light","Thermostat failure, corrosion inside housing","1. Check coolant temperature gauge for abnormal rise.
-2. Remove thermostat and place in hot water to see if it opens.
-3. Inspect housing for corrosion.
-4. Replace thermostat if it does not open at rated temperature.",DIY
-elec002,Intermittent ABS Sensor Failure,N/A,Brakes,Wheel Speed Sensor,High,"ABS warning light, occasional loss of traction control","Damaged sensor tone ring, corroded connector, wiring chafing","1. Scan for ABS codes (e.g., C0035).
-2. Inspect sensor and tone ring for cracks or debris.
-3. Test sensor resistance with multimeter.
-4. Check wiring harness for damage and repair.
-5. Replace sensor if out of spec.",Mechanic Required
-p0171-001,System Too Lean (Bank 1),P0171,Engine,Air Intake System,Medium,"Check engine light, rough idle, reduced fuel economy","Vacuum leak, dirty mass airflow sensor, low fuel pressure",1. Scan for code P0171. 2. Inspect all vacuum hoses for cracks. 3. Clean or replace MAF sensor. 4. Test fuel pressure at rail.,DIY
-p0300-002,Random/Multiple Cylinder Misfire Detected,P0300,Engine,Ignition System,High,"Check engine light, engine shake, loss of power","Faulty spark plugs, ignition coils, fuel delivery issues",1. Retrieve P0300 code. 2. Perform spark plug visual inspection and replace if needed. 3. Test coil resistance. 4. Check fuel pressure.,Mechanic Recommended
-p0420-003,Catalyst System Efficiency Below Threshold (Bank 1),P0420,Exhaust,Catalytic Converter,Medium,"Check engine light, reduced performance, possible odor","Failed catalytic converter, upstream O2 sensor malfunction, exhaust leak",1. Confirm P0420 code. 2. Inspect exhaust for leaks. 3. Test upstream O2 sensor voltage. 4. Perform catalyst temperature test.,Mechanic Required
-p0455-004,EVAP System Large Leak Detected,P0455,Fuel System,Evaporative Emissions System,Low,"Check engine light, occasional fuel smell","Loose fuel cap, cracked EVAP hose, faulty purge valve",1. Verify P0455 code. 2. Tighten or replace fuel cap. 3. Inspect EVAP hoses for cracks. 4. Test purge valve operation.,DIY
-p0700-005,Transmission Control Module (TCM) Malfunction,P0700,Transmission,TCM,High,"Transmission warning light, erratic shifting, loss of drive","Faulty TCM, wiring issues, low transmission fluid",1. Scan for P0700 and related codes. 2. Check transmission fluid level and condition. 3. Inspect TCM connectors for corrosion. 4. Perform TCM functional test with a diagnostic tool.,Mechanic Required
-brk001,Brake Pad Wear – Front,N/A,Brakes,Front Brake Pads,Low,"Squealing noise, longer stopping distance","Normal wear, aggressive driving",1. Visually inspect pad thickness. 2. Measure against manufacturer minimum. 3. Check for uneven wear patterns.,DIY
-elec001,Intermittent Battery Drain,N/A,Electrical,Battery and Charging System,Medium,"Dim lights, difficulty starting, battery warning light","Parasitic draw from aftermarket accessories, faulty alternator relay",1. Perform a parasitic draw test with ammeter. 2. Isolate circuits by pulling fuses one at a time. 3. Test alternator output voltage.,DIY
-sus001,Front Strut Leak,N/A,Suspension,Front Shock Absorber (Strut),Medium,"Nose dive under braking, uneven tire wear, clunking noise","Damaged strut seal, worn internal rod",1. Visual inspection for oil seepage around strut mount. 2. Bounce test – excessive rebound. 3. Check for uneven wear on tires.,Mechanic Recommended
-cool001,Thermostat Stuck Closed,N/A,Cooling,Engine Thermostat,High,"Engine overheating, coolant temperature rise, warning light","Thermostat failure, corrosion in housing",1. Observe coolant temperature gauge after warm-up. 2. Feel radiator inlet for hot coolant flow. 3. Remove thermostat and test in boiling water for opening temperature.,DIY
-elec002,Faulty Power Window Regulator,N/A,Electrical,Power Window Mechanism,Low,"Window moves slowly or not at all, clicking sound","Broken regulator cable, motor wear",1. Test window switch operation. 2. Listen for motor activity. 3. Remove door panel and inspect regulator for frayed cable or broken gear.,DIY
-p0171-001,System Too Lean (Bank 1),P0171,Engine,Mass Air Flow Sensor,Medium,"Check engine light, rough idle, poor acceleration","Dirty MAF sensor, vacuum leak, faulty fuel pump","1. Scan for code P0171.
-2. Inspect intake for vacuum leaks.
-3. Clean MAF sensor with MAF cleaner.
-4. Measure fuel pressure.
-5. Clear code and test drive.",DIY
-p0300-002,Random/Multiple Cylinder Misfire Detected,P0300,Engine,Ignition Coils,High,"Engine misfire, loss of power, fuel odor","Faulty ignition coils, worn spark plugs, low fuel pressure","1. Retrieve P0300 code.
-2. Perform coil resistance test.
-3. Inspect spark plugs for wear.
-4. Check fuel pressure.
-5. Replace faulty coils or plugs as needed.",Mechanic Recommended
-p0455-003,EVAP System Large Leak Detected,P0455,Emission,EVAP Canister Purge Valve,Low,"Check engine light, occasional fuel smell","Loose gas cap, cracked EVAP hose, faulty purge valve","1. Verify gas cap is tightened.
-2. Perform EVAP smoke test to locate leak.
-3. Inspect and replace damaged hose.
-4. Test purge valve operation.
-5. Reset codes.",DIY
-p0420-004,Catalyst System Efficiency Below Threshold (Bank 2),P0420,Exhaust,Catalytic Converter,Medium,"Check engine light, reduced fuel efficiency","Failed catalyst, oxygen sensor malfunction, exhaust leak","1. Confirm P0420 code.
-2. Inspect downstream O2 sensor voltage.
-3. Check for exhaust leaks before catalyst.
-4. Perform catalyst temperature test.
-5. Replace catalyst if temperature differential is low.",Mechanic Required
-p0700-005,Transmission Control Module (TCM) Malfunction,P0700,Transmission,TCM,High,"Gear shifting erratic, transmission warning lamp","Faulty TCM, wiring issue, low transmission fluid","1. Scan for P0700 and related codes.
+issue_0001,System Too Lean (Bank 1),P0171,Engine,Fuel System,Medium,"Check engine light, rough idle, poor fuel economy","Vacuum leak, clogged fuel filter, faulty MAF sensor",1. Scan for code P0171. 2. Inspect vacuum lines for leaks. 3. Check MAF sensor voltage. 4. Measure fuel pressure.,DIY
+issue_0002,Random/Multiple Cylinder Misfire Detected,P0300,Engine,Ignition System,High,"Check engine light, engine vibration, loss of power","Worn spark plugs, faulty ignition coils, low fuel pressure",1. Retrieve P0300 code. 2. Perform spark plug visual inspection. 3. Test coil resistance. 4. Check fuel pressure.,Mechanic Recommended
+issue_0003,Catalyst System Efficiency Below Threshold (Bank 1),P0420,Engine,Catalytic Converter,Medium,"Check engine light, reduced performance, possible emissions failure","Failed catalytic converter, upstream O2 sensor fault, exhaust leak",1. Read P0420 code. 2. Perform O2 sensor voltage sweep test. 3. Inspect exhaust for leaks. 4. Use temperature probe across cat to assess efficiency.,Mechanic Required
+issue_0004,Evaporative Emission System Leak Detected (Large Leak),P0455,Engine,EVAP System,Low,"Check engine light, faint fuel odor","Loose gas cap, cracked EVAP hose, faulty purge valve",1. Scan for P0455. 2. Tighten or replace gas cap. 3. Perform smoke test on EVAP lines. 4. Test purge valve operation.,DIY
+issue_0005,Transmission Fluid Leak,N/A,Transmission,Transmission Pan Gasket,Medium,"Fluid spots under vehicle, low transmission fluid level, delayed gear engagement","Worn pan gasket, damaged pan bolts",1. Inspect under vehicle for fluid. 2. Check transmission fluid level. 3. Locate leak source around pan. 4. Verify fluid color and smell.,DIY
+issue_0006,Brake Pedal Pulsation,N/A,Brakes,Brake Rotors,Medium,"Vibration in brake pedal during braking, uneven brake wear","Warped brake rotors, uneven pad wear",1. Visual inspect rotors for scoring or runout. 2. Measure rotor thickness and runout with dial indicator. 3. Check brake pad wear.,Mechanic Recommended
+issue_0007,Battery Low Voltage,N/A,Electrical,Battery,High,"Dim headlights, slow engine crank, warning light on dash","Aged battery, corroded terminals, charging system failure",1. Measure battery voltage at rest (should be >12.4V). 2. Load test battery. 3. Check terminal corrosion and tighten connections. 4. Verify alternator output.,DIY
+issue_0008,Front Suspension Noise Over Bumps,N/A,Suspension,Strut Mounts,Low,"Clunking noise when driving over bumps, uneven tire wear","Worn strut mounts, degraded bushings",1. Perform bounce test on front corners. 2. Inspect strut mounts for cracks or looseness. 3. Check for play in steering knuckles.,DIY
+issue_0009,Engine Overheating,N/A,Cooling,Radiator,Critical,"Temperature gauge rising, steam from engine bay, coolant loss","Clogged radiator, stuck thermostat, low coolant level",1. Check coolant level and condition. 2. Inspect radiator for external blockage. 3. Test thermostat operation by monitoring coolant temperature rise after start. 4. Verify radiator fan activation.,Mechanic Required
+issue_0010,Intake Air Temperature Sensor Circuit High,P0113,Engine,Intake Air Temperature Sensor,Low,"Check engine light, rough idle when cold start","Faulty IAT sensor, wiring short, connector corrosion",1. Scan for P0113. 2. Measure sensor voltage at cold and hot conditions. 3. Inspect wiring harness for damage. 4. Replace sensor if out of spec.,DIY
+issue_0011,Coolant Temperature Below Thermostat Regulating Temperature,P0128,Cooling,Thermostat,Medium,"Check engine light, low engine temperature, reduced fuel efficiency","Stuck open thermostat, low coolant level, faulty coolant temperature sensor",1. Scan for DTC P0128. 2. Verify coolant level. 3. Measure coolant temperature with infrared thermometer while engine warms. 4. Compare sensor reading to actual temperature. 5. Remove thermostat and test its opening temperature in boiling water.,DIY
+issue_0012,Exhaust Gas Recirculation Flow Insufficient Detected,P0401,Engine,EGR Valve,High,"Check engine light, rough idle, increased emissions, poor fuel economy","Clogged EGR passages, stuck closed EGR valve, vacuum leak in EGR circuit",1. Scan for P0401. 2. Perform visual inspection of EGR valve and passages for carbon buildup. 3. Apply vacuum to EGR valve to see if it opens. 4. Use a scan tool to command EGR valve open and monitor flow sensor reading. 5. Check vacuum lines for cracks.,Mechanic Recommended
+issue_0013,Vehicle Speed Sensor Malfunction,P0500,Electrical,Vehicle Speed Sensor,Medium,"Check engine light, erratic speedometer, transmission shift issues","Faulty VSS, damaged wiring harness, dirty sensor tone ring",1. Retrieve DTC P0500. 2. Use a multimeter to measure VSS voltage while rotating wheel. 3. Inspect wiring connector for corrosion. 4. Check tone ring for damage or debris.,DIY
+issue_0014,Transmission Control Module (TCM) Malfunction,P0700,Transmission,Transmission Control Module,Critical,"Check engine light, transmission gear slippage, delayed shifts","Failed TCM, wiring issues, low transmission fluid pressure","1. Scan for P0700 and any related sub‑codes (e.g., P0705). 2. Verify transmission fluid level and condition. 3. Perform a wiring continuity check to TCM. 4. Use a professional scan tool to request TCM live data and test output signals.",Mechanic Required
+issue_0015,Airbag System Fault – Supplemental Restraint System Disabled,P0A20,Electrical,Airbag Module,Critical,"Airbag warning light, no deployment in crash","Faulty airbag control module, broken wiring harness, deployed airbag previously",1. Scan for P0A20 and related codes. 2. Inspect airbag module connectors for corrosion. 3. Verify module power and ground voltage with a multimeter. 4. Perform a module self‑test using a dealership scan tool.,Mechanic Required
+issue_0016,Knock Sensor 1 Circuit High Input,P0325,Engine,Knock Sensor,Low,"Check engine light, engine may run richer, minor fuel economy loss","Faulty knock sensor, wiring short to voltage, improper sensor gap",1. Retrieve P0325. 2. Measure sensor voltage with engine off (should be ~0V) and at idle (should be low). 3. Check connector for water intrusion. 4. Compare resistance to spec.,DIY
+issue_0017,Throttle Actuator Control (TAC) Motor Circuit Range/Performance,P2101,Engine,Throttle Body,High,"Check engine light, throttle feels unresponsive, jerky acceleration","Dirty throttle body, faulty throttle position sensor, TAC motor failure",1. Scan for P2101. 2. Inspect throttle body for carbon buildup; clean if needed. 3. Use scan tool to command throttle open/close and monitor position sensor voltage. 4. Check wiring for frays.,Mechanic Recommended
+issue_0018,Excessive Crankcase Pressure,P0C03,Engine,PCV Valve,Medium,"Check engine light, oil leaks, rough idle","Clogged PCV valve, blocked breather hose, worn piston rings",1. Scan for P0C03. 2. Remove PCV valve and shake; audible rattle indicates good valve. 3. Inspect breather hose for blockages. 4. Perform compression test if high oil consumption persists.,DIY
+issue_0019,Vehicle Immobilizer System Malfunction,P1500,Electrical,Immobilizer Antenna,High,"Engine cranks but does not start, security light flashes","Faulty antenna ring, damaged key transponder, wiring fault",1. Retrieve P1500. 2. Verify key fob battery. 3. Inspect antenna ring wiring for damage. 4. Use dealer scan tool to perform immobilizer self‑test.,Mechanic Recommended
+issue_0020,Throttle Actuator Control Motor Current Too Low,P2108,Engine,Throttle Body,Medium,"Check engine light, limited engine power, occasional stalling","Throttle motor weak, low supply voltage, wiring resistance",1. Scan for P2108. 2. Measure supply voltage at throttle motor connector. 3. Compare motor current draw to specification while commanding open. 4. Inspect ground connection.,Mechanic Recommended
+issue_0021,Manifold Absolute Pressure (MAP) Sensor Circuit Low Voltage,P0106,Engine,MAP Sensor,Medium,"Rough idle, poor acceleration, check engine light","Faulty MAP sensor, wiring harness damage, vacuum leak",1. Scan for code P0106. 2. Inspect MAP sensor connector for corrosion. 3. Measure sensor voltage with multimeter while engine is running (should be ~0.5-4.5V). 4. Compare voltage to live data via OBD scanner. 5. Test for vacuum leaks with smoke machine. 6. Replace sensor if voltage out of spec.,DIY
+issue_0022,O2 Sensor Heater Circuit Malfunction (Bank 2 Sensor 1),P0135,Engine,Oxygen Sensor Heater,Low,"Check engine light, delayed catalytic converter warm-up, reduced fuel efficiency","Faulty O2 sensor heater, blown fuse, damaged wiring",1. Retrieve code P0135. 2. Verify fuse for O2 sensor circuit. 3. Perform resistance check on sensor heater terminals (should be 2-5 ohms). 4. Use OBD live data to monitor sensor heating voltage. 5. Replace O2 sensor if heater resistance out of spec.,DIY
+issue_0023,Cylinder 1 Misfire Detected,P0301,Engine,Ignition Coil,High,"Rough idle, loss of power, engine vibration, check engine light","Faulty coil, bad spark plug, fuel injector issue, low compression","1. Scan for P0301. 2. Perform spark plug visual inspection; replace if fouled. 3. Swap coil with another cylinder and clear code; if code follows coil, replace coil. 4. Test fuel injector pulse with a scan tool. 5. Conduct compression test on cylinder 1.",Mechanic Recommended
+issue_0024,System Voltage Low,P0562,Electrical,Battery/Charging System,Critical,"Stalling, dim headlights, check engine light, difficulty starting","Weak battery, failing alternator, poor ground connections",1. Read P0562 code. 2. Measure battery voltage with engine off (should be >12.4V). 3. Start engine and measure voltage at battery terminals (should be 13.5-14.5V). 4. Inspect battery terminals for corrosion. 5. Test alternator output with load tester.,Mechanic Required
+issue_0025,Parking Brake Switch Circuit Fault,P0584,Brakes,Parking Brake Switch,Medium,"Parking brake light stays on, brake warning chime, check engine light","Faulty switch, damaged wiring, corroded connector",1. Scan for P0584. 2. Locate parking brake switch under dashboard. 3. Check continuity of switch circuit with multimeter. 4. Inspect wiring harness for cracks or chafing. 5. Replace switch if continuity fails.,DIY
+issue_0026,Control Module Power Supply/ Ground Circuit Malfunction,P0610,Transmission,Transmission Control Module (TCM),High,"Harsh shifting, transmission slip, check engine light","Bad TCM power supply, corroded ground, blown fuse",1. Retrieve P0610. 2. Check TCM fuse and relay. 3. Measure voltage at TCM power pin (should be ~12V). 4. Verify ground resistance (<5 ohms). 5. Scan for additional transmission codes. 6. Replace TCM if power/ground verified but fault persists.,Mechanic Required
+issue_0027,Transmission Control System Range/Performance,P0706,Transmission,Transmission Shift Solenoid,Medium,"Hard shifts, delayed engagement, check engine light","Faulty shift solenoid, low fluid pressure, clogged valve body",1. Scan for P0706. 2. Check transmission fluid level and condition. 3. Perform solenoid resistance test (compare to spec). 4. Use scan tool to command shift and monitor response. 5. Replace solenoid if out of spec.,Mechanic Recommended
+issue_0028,Insufficient Fuel Pressure,P1125,Engine,Fuel Pump,High,"Engine stalls, poor acceleration, check engine light","Weak fuel pump, clogged fuel filter, fuel pressure regulator failure","1. Read P1125. 2. Connect fuel pressure gauge to test port. 3. Measure pressure at idle (spec typically 30-45 psi). 4. Compare to spec. 5. Replace fuel filter, then retest. 6. If pressure still low, replace fuel pump.",Mechanic Required
+issue_0029,System Too Rich at Idle (Bank 1),P2187,Engine,Fuel Trim,Low,"Black smoke, rough idle, fuel smell","Leaking fuel injector, faulty MAF sensor, vacuum leak, stuck open purge valve",1. Scan for P2187. 2. Observe short-term fuel trim values via OBD; should be >+20% for rich condition. 3. Inspect MAF sensor for contamination; clean if dirty. 4. Perform fuel injector leak test (pressurized test). 5. Check for vacuum leaks with smoke machine. 6. Replace faulty component.,DIY
+issue_0030,ECU Internal Temperature Too High,P2500,Electrical,Engine Control Module (ECM),Critical,"Intermittent stalling, loss of power, check engine light","ECM overheating due to poor ventilation, water intrusion, failing cooling fan",1. Retrieve P2500. 2. Locate ECM and inspect for water or debris. 3. Verify cooling fan operation and airflow to ECM. 4. Measure ECM temperature sensor reading (if accessible). 5. Clean ventilation paths. 6. Replace ECM if temperature remains high.,Mechanic Required
+issue_0031,Catalyst System Efficiency Below Threshold (Bank 2),P0425,Engine,Catalytic Converter (Bank 2),Medium,"Check engine light, reduced power, higher emissions","Faulty catalyst, oxygen sensor malfunction, exhaust leak","1. Scan for stored codes and freeze frame data.
+2. Perform a catalyst efficiency test with a scan tool.
+3. Inspect exhaust system for leaks upstream of catalyst.
+4. Test upstream and downstream O2 sensor voltages.
+5. Replace catalyst if efficiency below 80% after confirming other causes.",Mechanic Required
+issue_0032,Cylinder 2 Misfire Detected,P0302,Engine,Cylinder 2 Ignition System,High,"Rough idle, loss of power, engine vibration","Faulty spark plug, bad ignition coil, low compression","1. Retrieve live data for misfire count on cylinder 2.
+2. Inspect and replace spark plug.
+3. Swap coil with another cylinder to see if misfire follows.
+4. Perform compression test on cylinder 2.
+5. Replace faulty coil or address compression issue.",DIY or Mechanic Recommended
+issue_0033,Engine Coolant Temperature Sensor Circuit High,P0118,Cooling,Coolant Temperature Sensor,Low,"Check engine light, erratic fan operation, poor fuel economy","Short to voltage, damaged sensor wiring, failed sensor","1. Scan for P0118 and note freeze frame temperature.
+2. Inspect sensor connector for corrosion or broken wires.
+3. Measure sensor resistance at cold and hot states.
+4. Replace sensor if resistance out of spec.
+5. Clear codes and test drive.",DIY
+issue_0034,System Voltage Malfunction,P0560,Electrical,Battery / Charging System,Medium,"Check engine light, dim interior lights, intermittent stalling","Loose battery terminal, faulty alternator voltage regulator, bad wiring","1. Measure battery voltage with engine off (should be ~12.6V).
+2. Start engine and measure voltage (should be 13.8‑14.8V).
+3. Check alternator output and ground connections.
+4. Inspect main power wire for damage.
+5. Replace alternator or repair wiring as needed.",DIY or Mechanic Recommended
+issue_0035,Hybrid Battery Pack Voltage Imbalance,P0A00,Electrical,Hybrid Battery Pack,Critical,"Reduced electric assist, warning lights, limited driving range","Cell imbalance, high voltage fault, BMS failure","1. Use manufacturer-specific scan tool to read battery module voltages.
+2. Identify modules outside tolerance.
+3. Perform balance procedure if supported.
+4. Replace faulty module or BMS if imbalance persists.
+5. Clear codes and verify performance.",Mechanic Required
+issue_0036,Rear Brake Caliper Sticking,N/A,Brakes,Rear Brake Caliper,High,"Pulling to one side, brake pedal feels spongy, uneven wear","Corroded piston pin, collapsed brake hose, seized caliper slide pins","1. Inspect rear wheels for uneven pad wear.
+2. Jack up vehicle, remove caliper, check piston movement.
+3. Look for brake fluid leaks around caliper.
+4. Replace caliper or rebuild with new seals and slide pins.
+5. Bleed brake system and test.",DIY or Mechanic Recommended
+issue_0037,Strut Mount Deterioration,N/A,Suspension,Front Strut Mounts,Medium,"Clunking noise over bumps, poor handling, uneven tire wear","Worn rubber isolator, cracked metal mount","1. Perform bounce test on front corners.
+2. Listen for metal‑on‑metal noise while driving over a speed bump.
+3. Inspect strut mounts for cracks or looseness.
+4. Replace mount if rubber is deteriorated.
+5. Re‑align vehicle after replacement.",DIY
+issue_0038,Camshaft Position Sensor (Bank 1) Circuit Intermittent,P0340,Engine,Camshaft Position Sensor (Bank 1),High,"Stalling, rough idle, no start after cranking","Damaged sensor, wiring harness chafing, poor connector contact","1. Scan for P0340 and check freeze frame data.
+2. Visual inspection of sensor wiring for cracks.
+3. Test sensor resistance and signal output with oscilloscope.
+4. Replace sensor if out of spec.
+5. Clear codes and perform start‑stop test.",DIY or Mechanic Recommended
+issue_0039,Radiator Fan Relay Stuck Open,N/A,Cooling,Radiator Fan Relay,Low,"Fan runs continuously, battery drain, higher fuel consumption","Relay contacts welded, moisture ingress","1. Listen for fan operation with engine off and after start.
+2. Test relay coil resistance and continuity.
+3. Swap relay with identical one from another circuit.
+4. Replace relay if faulty.
+5. Verify fan cycles correctly with temperature sensor.",DIY
+issue_0040,Transmission Over‑Temperature Warning,P0715,Transmission,Transmission Fluid Temperature Sensor,Medium,"Shift delays, limp mode, warning light","Faulty temperature sensor, low fluid level, clogged cooler","1. Scan for P0715 and note current sensor reading.
 2. Check transmission fluid level and condition.
-3. Inspect TCM connectors for corrosion.
-4. Perform TCM output test with oscilloscope.
-5. Replace TCM if output is out of spec.",Mechanic Required
-brk001,Brake Caliper Sticking,N/A,Brakes,Brake Caliper,Medium,"Brake pedal feels soft, vehicle pulls to one side, uneven pad wear","Corroded piston, seized slide pins, contaminated brake fluid","1. Visual inspection of caliper for rust.
-2. Check pad wear on both sides.
-3. Pump brake pedal and observe pedal height.
-4. Remove caliper and inspect piston movement.
-5. Rebuild or replace caliper as needed.",DIY (with tools)
-elec001,Intermittent Battery Drain,N/A,Electrical,Battery and Wiring,High,"Battery warning light, vehicle won't start after sitting, dim lights","Parasitic draw from aftermarket accessories, bad alternator diode, faulty relay","1. Measure resting current draw (<50 mA is normal).
-2. Pull fuses one at a time to isolate source.
-3. Inspect aftermarket devices for proper wiring.
-4. Test alternator output voltage.
-5. Repair or replace offending component.",DIY
-sus001,Front Strut Leak,N/A,Suspension,Front Strut Assembly,Low,"Clunking over bumps, uneven ride height, leaking fluid on wheel well","Damaged strut seal, worn rod, corrosion","1. Inspect strut for oil residue or drops.
-2. Check for play in the strut mount.
-3. Perform bounce test for excessive movement.
-4. Disassemble strut to inspect seal.
-5. Replace strut if seal is compromised.",DIY (requires spring compressor)
-cool001,Thermostat Stuck Closed,N/A,Cooling,Engine Thermostat,Critical,"Engine overheating, coolant temperature spikes, warning light","Thermostat failure, debris in thermostat housing","1. Observe coolant temperature gauge after warm-up.
-2. Feel radiator outlet for cold flow; if hot, thermostat likely stuck.
-3. Remove thermostat and test in boiling water (opens at 195°F).
-4. Replace thermostat if it does not open.
-5. Flush cooling system and refill.",DIY
-elec002,Faulty Power Window Regulator,N/A,Electrical,Power Window Regulator,Low,"Window moves slowly or not at all, grinding noise","Broken cable, worn gears, motor failure","1. Switch window on and listen for motor activity.
-2. Remove door panel and inspect regulator cables for fraying.
-3. Test motor voltage with multimeter while activating switch.
-4. Replace regulator or motor as indicated.
-5. Reassemble door panel.",DIY
+3. Test sensor resistance at known temperatures.
+4. Replace sensor if out of spec.
+5. Clear code and monitor for recurrence.",DIY or Mechanic Recommended
+issue_0041,Mass Air Flow Sensor Circuit Intermittent,P0101,Engine,Mass Air Flow (MAF) Sensor,Medium,"Rough idle, reduced power, stalling","Dirty MAF sensor, cracked wiring harness, faulty sensor",1. Scan for P0101 code. 2. Inspect MAF sensor connector for corrosion or loose pins. 3. Measure voltage signal while engine runs (should fluctuate 0.5-4.5V). 4. Clean MAF sensor with MAF cleaner. 5. Replace sensor if voltage out of range.,DIY
+issue_0042,Crankshaft Position Sensor Circuit Malfunction,P0565,Engine,Crankshaft Position Sensor,High,"Engine stalls, no start, check engine light","Failed sensor, damaged wiring, connector corrosion","1. Retrieve P0565 code. 2. Locate sensor on harmonic balancer. 3. Disconnect connector, test resistance (should be 500-1500 ohms). 4. Check for cracked wires or water intrusion. 5. Replace sensor if out of spec.",Mechanic Required
+issue_0043,Crankshaft Position Sensor A Circuit High Input,P0335,Engine,Crankshaft Position Sensor A,Medium,"Engine misfire, rough running, check engine light","Sensor voltage too high, short to power, wiring fault",1. Scan for P0335. 2. Verify sensor voltage with multimeter (should be 0-5V). 3. Inspect wiring for shorts to battery. 4. Replace sensor if voltage remains high after wiring correction.,DIY
+issue_0044,Transmission Input Shaft Speed Sensor Circuit Malfunction,P0701,Transmission,Input Shaft Speed Sensor,High,"Gear shifting problems, transmission warning light, delayed engagement","Faulty sensor, damaged harness, connector corrosion",1. Read P0701 code. 2. Locate sensor on transmission input shaft. 3. Check connector pins for damage. 4. Measure sensor output while engine revs (should vary with RPM). 5. Replace sensor if output irregular.,Mechanic Required
+issue_0045,Fuel Trim Too Rich Bank 1,P1135,Engine,Fuel System,Low,"Black smoke, strong gasoline odor, decreased fuel economy","Leaking fuel injector, faulty O2 sensor, high fuel pressure",1. Scan for P1135. 2. Perform live data scan for short-term fuel trim (should be <+10%). 3. Inspect fuel injectors for leaks. 4. Test fuel pressure (should be within spec). 5. Replace leaking injector or O2 sensor as needed.,DIY
+issue_0046,Turbocharger Boost Pressure Sensor Circuit Low,P1234,Engine,Turbocharger Boost Pressure Sensor,Medium,"Loss of power, turbo lag, check engine light","Sensor failure, vacuum leak, wiring short to ground",1. Retrieve P1234 code. 2. Locate boost pressure sensor on turbo housing. 3. Measure sensor voltage (should be >0.5V). 4. Check for vacuum hose cracks. 5. Replace sensor if voltage low.,DIY
+issue_0047,ABS Wheel Speed Sensor Failure (Front Left),N/A,Brakes,Front Left Wheel Speed Sensor,High,"ABS warning light, longer stopping distance, intermittent brake pedal feel","Sensor damage, corroded connector, broken tone ring",1. Perform ABS self‑test via scan tool. 2. Visual inspection of sensor and tone ring for cracks. 3. Test sensor resistance (should be 800-1200 ohms). 4. Clean connector and pins. 5. Replace sensor if resistance out of range.,Mechanic Required
+issue_0048,Power Steering Fluid Leak from Reservoir Seal,N/A,Suspension,Power Steering Reservoir Seal,Medium,"Whining noise when steering, low fluid level, occasional steering stiffness","Aged rubber seal, cracked reservoir, improper installation",1. Inspect reservoir for wet spots or dried fluid. 2. Check fluid level and condition. 3. Clean area and apply sealant if minor leak. 4. Replace reservoir if seal damaged.,DIY
+issue_0049,Radiator Coolant Temperature Sensor Circuit Low Voltage,N/A,Cooling,Coolant Temperature Sensor,High,"Engine overheating, fan not engaging, check engine light","Sensor short to ground, damaged wiring, corroded connector",1. Locate coolant temperature sensor (usually on engine block). 2. Disconnect connector and measure resistance (should increase with temperature). 3. Check wiring for shorts to ground. 4. Replace sensor if resistance abnormal.,DIY
+issue_0050,Electronic Throttle Body Sticking Open,N/A,Electrical,Electronic Throttle Body,Critical,"Uncontrolled high idle, sudden acceleration, engine stall","Throttle actuator motor failure, carbon buildup, faulty control module","1. Perform throttle position sensor (TPS) live data check (should move 0‑90%). 2. Inspect throttle body for carbon deposits; clean if needed. 3. Test voltage to throttle motor (12V). 4. If motor does not respond, replace throttle body assembly.",Mechanic Required
